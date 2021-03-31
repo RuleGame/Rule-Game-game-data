@@ -24,8 +24,43 @@ jobs:
         with:
           node-version: '12'
 
-      - name: Zip game-data folders
-        run: zip -r game-data.zip boards colors param rules shapes trial-lists
+      - name: Zip boards folder
+        run: zip -r boards.zip boards
 
-      - name: Upload build
-        run: curl -k -F "secret=${{ secrets.UPLOAD_SECRET }}" -F "build=@game-data.zip" "${{ secrets.UPLOAD_URL }}"
+      - name: Upload boards
+        run: curl -k -F "secret=${{ secrets.UPLOAD_SECRET }}" -F "build=@boards.zip" "${{ secrets.UPLOAD_URL }}"
+
+
+      - name: Zip colors folder
+        run: zip -r colors.zip colors
+
+      - name: Upload colors
+        run: curl -k -F "secret=${{ secrets.UPLOAD_SECRET }}" -F "build=@colors.zip" "${{ secrets.UPLOAD_URL }}"
+
+
+      - name: Zip param folder
+        run: zip -r param.zip param
+
+      - name: Upload param
+        run: curl -k -F "secret=${{ secrets.UPLOAD_SECRET }}" -F "build=@param.zip" "${{ secrets.UPLOAD_URL }}"
+
+
+      - name: Zip rules folder
+        run: zip -r rules.zip rules
+
+      - name: Upload rules
+        run: curl -k -F "secret=${{ secrets.UPLOAD_SECRET }}" -F "build=@rules.zip" "${{ secrets.UPLOAD_URL }}"
+
+
+      - name: Zip shapes folder
+        run: zip -r shapes.zip shapes
+
+      - name: Upload shapes
+        run: curl -k -F "secret=${{ secrets.UPLOAD_SECRET }}" -F "build=@shapes.zip" "${{ secrets.UPLOAD_URL }}"
+
+
+      - name: Zip trial-lists folder
+        run: zip -r trial-lists.zip trial-lists
+
+      - name: Upload trial-lists
+        run: curl -k -F "secret=${{ secrets.UPLOAD_SECRET }}" -F "build=@trial-lists.zip" "${{ secrets.UPLOAD_URL }}"

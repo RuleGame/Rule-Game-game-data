@@ -9,4 +9,8 @@ This Git repository contains the following folders in `game-data` for the Rule G
 - shapes
 - trial-lists
 
-Any edits here will replace whatever is in the `game-data` folder. **Warning**: The existing `game-data` folder in the server will be replaced! There is a backup folder that will be created for whatever is replaced in `/var/www/rule-game/github-actions-server/backups/game-data` with the folder name with the time format `YYYY-MM-DD_HH-MM-DD` of when it got replaced.
+Any edits here will replace the folders above in the `game-data` folder. 
+
+**Warning**: The existing above folders in `game-data` in the server will be replaced! 
+
+There will be backup folders created for whatever was replaced. They are in `/var/www/rule-game/github-actions-server/backups` with the folder name with the time format `YYYY-MM-DD_HH-MM-DD` of when it got replaced.
