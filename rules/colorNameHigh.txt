@@ -1,0 +1,2 @@
+# ruleArrayName=colorNameHigh
+(*,bluehigh,*,*,[0]) (*,brownhigh,*,*,[1]) (*,redhigh*,*,[2]) (*,purplehigh,*,*,[3])}
