@@ -1,0 +1,2 @@
+(1,*,*,*,[2,3])   % requires strict alternation of top and bottom
+(1,*,*,*,[0,1])

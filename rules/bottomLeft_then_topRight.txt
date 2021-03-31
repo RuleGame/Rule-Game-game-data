@@ -1,0 +1,2 @@
+(1,*,*,*,[3])   # requires strict alternation of topRight and bottomLeft
+(1,*,*,*,[1])

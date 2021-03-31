@@ -1,0 +1,2 @@
+# star and triangle can go into 0 or 1 and square and circle can go into 2 or 3
+(*,star,*,*,[0,1]) (*,triangle,*,*,[0,1]) (*,circle,*,*,[2,3]) (*,square,*,*,[2,3])

@@ -1,0 +1,1 @@
+(1,*,*,*,[0,1]) (1,*,*,*,[2,3])  % means one on top one on bottom. Alternate Either order. Allows 2T or 2B in a row, but not 3

@@ -1,0 +1,8 @@
+PUSH DOWN LOG.
+
+
+2020 SEP 30. changed the last two fields of all the csv files from FALSE to TRUE
+Used this command:
+ for fn in tr* ; do sed 's/FALSE/TRUE/g' $fn > $fn.tmp;  mv $fn.tmp $fn ; done
+-paul
+
