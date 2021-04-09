@@ -7,10 +7,10 @@
 </defs>
 <g stroke-width="10pt">
 <use stroke="#ffffff" xlink:href="#p0-ducklow" />
-<use stroke="#050608" xlink:href="#p1-ducklow" />
+<use stroke="currentColor" xlink:href="#p1-ducklow" />
 </g>
 <g>
 <use fill="#ffffff" xlink:href="#p0-ducklow" />
-<use fill="#050608" xlink:href="#p1-ducklow" />
+<use fill="currentColor" xlink:href="#p1-ducklow" />
 </g>
 </svg>
