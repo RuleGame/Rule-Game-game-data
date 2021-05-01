@@ -1,0 +1,8 @@
+# As per Paul's suggestion 2021-04-30
+# Alternately clear from the highest row and then from lowest row of
+# the displayed objects (clear one from top, then one from bottom, and
+# iterate). The first object can go anywhere, but after that the
+# objects must be placed in clockwise order.
+
+(1,*,*, T, [!p*[0,1,2,3], p+1])
+(1,*,*, B, p+1)
