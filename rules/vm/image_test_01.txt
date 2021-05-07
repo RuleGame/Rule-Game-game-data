@@ -1,1 +1,1 @@
-(*,*,*,T,[0,1])
+(species:cat, pos:T, bucket:[0]) (species:turtle, pos:T, bucket:[1])
