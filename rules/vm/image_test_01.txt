@@ -1,1 +1,3 @@
-(species:cat, pos:T, bucket:[0]) (species:turtle, pos:T, bucket:[1])
+#-- Cats: starting bucket 0, counterclockwise
+#-- Turtles: starting bucket 1, clockwise
+(species:cat, pos:T, bucket:[!p.species*0, p.species-1]) (species:turtle, pos:T, bucket:[!p.species*1, p.species+1])
