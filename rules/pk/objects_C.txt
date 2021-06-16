@@ -1,0 +1,3 @@
+# object_C.txt is intended ot be a difficult object-based rule not depending very much on history. The ideas is to alternately make a move based on shape and one based on color. I am not sure about the difficulty for humans. Check the row counter syntax. 
+1 (1,square,*,*,[0]) (1,triangle,*,*,[1]) (1,circle,*,*,[2]) (1,star,*,*,[3])
+1 (1,*,red,*,[0]) (1,*,blue,*,[1]) (1,*,black,*,[2]) (1,*,yellow,*,[3])
