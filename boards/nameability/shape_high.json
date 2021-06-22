@@ -1,7 +1,7 @@
 {"id":"shape_high",
- "value":[{"color":"mustard_low","shape":"camel_high","id":"1","x":6,"y":5},
-	  {"color":"green_low","shape":"bird_high","id":"2","x":1,"y":3},
-	  {"color":"brown_low","shape":"duck_high","id":"3","x":3,"y":4},
-	  {"color":"grey_low","shape":"cat_high","id":"4","x":2,"y":2}
+ "value":[{"color":"MUSTARD_LOW","shape":"CAMELHIGH","id":"1","x":6,"y":5},
+	  {"color":"GREEN_LOW","shape":"BIRDHIGH","id":"2","x":1,"y":3},
+	  {"color":"BROWN_LOW","shape":"DUCKHIGH","id":"3","x":3,"y":4},
+	  {"color":"GREY_LOW","shape":"CATHIGH","id":"4","x":2,"y":2}
 	 ],
  "name":"shape_high"}
