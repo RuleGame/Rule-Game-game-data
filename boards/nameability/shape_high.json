@@ -4,4 +4,4 @@
 	  {"color":"brown_low","shape":"duck_high","id":"3","x":3,"y":4},
 	  {"color":"grey_low","shape":"cat_high","id":"4","x":2,"y":2}
 	 ],
- "name":"Shapes for shape high"}
+ "name":"shape_high"}
