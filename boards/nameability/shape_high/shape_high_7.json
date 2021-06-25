@@ -1,6 +1,6 @@
 {"id":"shape_high_7",
- "value":[{"color":"MUSTARD_LOW","shape":"CAMELHIGH","id":"1","x":3,"y":2},
-	  {"color":"GREEN_LOW","shape":"BIRDHIGH","id":"2","x":5,"y":3},
+ "value":[{"color":"MUSTARD_LOW","shape":"BIRDHIGH","id":"1","x":3,"y":2},
+	  {"color":"GREEN_LOW","shape":"CAMELHIGH","id":"2","x":5,"y":3},
 	  {"color":"BROWN_LOW","shape":"DUCKHIGH","id":"3","x":4,"y":4},
 	  {"color":"GREY_LOW","shape":"CATHIGH","id":"4","x":6,"y":1}
 	 ],
