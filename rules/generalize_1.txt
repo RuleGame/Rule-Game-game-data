@@ -1,2 +1,2 @@
 # ruleArrayName=generalize_1
-(*,birdlow,*,*,[0]) (*,*,red,*,[0]) (*,camellow,*,*,[1]) (*,*,yellow,*,[1]) (*,ducklow,*,*,[2]) (*,*,blue,*,[2]) (*,catlow,*,*,[3]) (*,*,black,*,[3])
+(*,birdhigh,*,*,[0]) (*,*,red,*,[0]) (*,camelhigh,*,*,[1]) (*,*,yellow,*,[1]) (*,duckhigh,*,*,[2]) (*,*,blue,*,[2]) (*,cathigh,*,*,[3]) (*,*,black,*,[3])
