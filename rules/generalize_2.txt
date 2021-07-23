@@ -1,0 +1,2 @@
+# ruleArrayName=generalize_2
+(*,square,*,*,[0]) (*,*,red,*,[0]) (*,triangle,*,*,[1]) (*,*,yellow,*,[1]) (*,star,*,*,[2]) (*,*,blue,*,[2]) (*,circle,*,*,[3]) (*,*,black,*,[3])

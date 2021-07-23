@@ -1,0 +1,1 @@
+{"id":0,"name":"Random board with 4 pieces, 4 shapes, and 4 colors","value":[{"id":0,"color":"BLUE","shape":"SQUARE","x":2,"y":1,"buckets":[]},{"id":1,"color":"RED","shape":"STAR","x":5,"y":4,"buckets":[]},{"id":2,"color":"YELLOW","shape":"CIRCLE","x":6,"y":4,"buckets":[]},{"id":3,"color":"BLACK","shape":"TRIANGLE","x":4,"y":5,"buckets":[]}]}
