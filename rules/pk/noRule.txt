@@ -1,0 +1,7 @@
+# This is Jerry's rule that is kind of like a Rorschach test
+# Anything can go anywhere.
+# 
+# 
+(*,*,*,*,[0,1,2,3])
+
+
