@@ -1,0 +1,7 @@
+# Objects_A is intended to be an easy object based rule.
+# It simply puts each shape to a bucket
+# 
+# 
+(*,square,*,*,[0]) (*,circle,*,*,[1]) (*,triangle,*,*,[2]) (*,star,*,*,[3])
+
+

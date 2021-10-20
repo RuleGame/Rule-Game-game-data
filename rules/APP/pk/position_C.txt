@@ -1,0 +1,6 @@
+# intended to be very difficult position rule
+# uses an order on the cells generated randomly using python
+# so this can be learned, with high probability, in about 12 boards
+# but with random boards it cannot be guaranteed to learn it. 
+Order custom=[22,8,2,32,7,30,26,10,24,28,23,21,31,17,16,13,1,25,36,14,18,4,3,27,20,12,19,29,34,6,9,5,15,11,35,33]
+(*,*,*,custom, Nearby)
