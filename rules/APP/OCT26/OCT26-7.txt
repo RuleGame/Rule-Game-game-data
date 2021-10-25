@@ -1,1 +1,1 @@
-(*, square, *, *, [3]) (*, triangle, *, *,0) (*, circle, *, *,1) (*, square, *, *3)
+(*, square, *, *, [3]) (*, triangle, *, *,0) (*, circle, *, *,1) (*, square, *, *,3)
