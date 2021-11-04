@@ -1,0 +1,6 @@
+# Illustrates the use of custome colors and custom shapes in Game Server 2.*.
+# What can be picked on a given step is controlled by the color, and the destination, by the shape.
+1 (*,"arrows/arrow-up-left",[red,pink],*,0)  (*,"arrows/arrow-up-left",[blue,green],*,2) 
+1 (*,"arrows/arrow-up-right",[red,pink],*,1) (*,"arrows/arrow-up-right",[blue,green],*,3)
+1 (*,"arrows/arrow-down-right",[red,pink],*,2) (*,"arrows/arrow-down-right",[blue,green],*,0)
+1 (*,"arrows/arrow-down-left",[red,pink],*,3) (*,"arrows/arrow-down-left",[blue,green],*,1)
