@@ -2,8 +2,6 @@ rule_id,max_boards,min_points,max_points,activate_bonus_at,min_objects,max_objec
 vm/arrows/rule-01,5,2,10,2,4,6,4,4,3,4,4,9,1,1.5,2,3,1.3,fixed,6,TRUE,TRUE,RED;PINK;GREEN;BLUE,arrows/arrow-down-left;arrows/arrow-up-right;arrows/arrow-down-right;arrows/arrow-up-left
 vm/TD-01,5,2,10,2,4,6,4,4,3,4,4,9,1,1.5,2,3,1.3,fixed,6,TRUE,TRUE,RED;PINK;PURPLE;YELLOW,STAR;MOON;SUN;CLOUD
 vm/TD-02,5,2,10,2,4,6,4,4,3,4,4,9,1,1.5,2,3,1.3,fixed,6,TRUE,TRUE,,cloud;cloud-rain;cloud-lightning;cloud-snow;cloud-drizzle
-vm/TD-07,5,2,10,2,4,6,4,4,3,4,4,9,1,1.5,2,3,1.3,fixed,6,TRUE,TRUE,RED;BLUE;GREEN;PURPLE
-vm/TD-04,5,2,10,2,4,6,4,4,3,4,4,9,1,1.5,2,3,1.3,fixed,6,TRUE,TRUE
-vm/TD-05,5,2,10,2,4,6,4,4,3,4,4,9,1,1.5,2,3,1.3,fixed,6,TRUE,TRUE
+vm/TD-07,5,2,10,2,4,6,4,4,3,4,4,9,1,1.5,2,3,1.3,fixed,6,TRUE,TRUE,RED;BLUE;GREEN;PURPLE,
 
 
