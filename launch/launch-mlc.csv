@@ -1,7 +1,5 @@
-pilot06,"pilot06 is the first experiment plan that was played by lots of M-Turkers"
-teaching_all_orders,"Paul's plan with several rule sets, from the simplest to more complex"
-name_disjunction,"name_disjunction"
-pk/position_A,"test A"
-pk/position_B,"test B"
-pk/position_C,"test C"
+MLC/vm/image_test_02,"An example of using properties-based object. The arrows orientation (angle to the vertical) is one of the properties here."
+pk/position_A,"Paul's test A, just put here as an example"
+pk/position_B,"Paul's test B"
+pk/position_C,"Paul's test C"
 

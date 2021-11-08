@@ -1,0 +1,7 @@
+#-- If you pick an object, and no object of this shape has been moved
+#-- yet, you can put it to the nearest bucket. Otherwise, the object must
+#-- be put to the "next" bucket (clockwise) after the bucket into which
+#-- an object of this shape was last put.
+
+(bucket:[!ps*Nearby, ps+1])
+

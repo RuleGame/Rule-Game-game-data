@@ -1,0 +1,6 @@
+#-- Every object has to go to the same bucket into which the first
+#-- object of this shape went. (And the very first object of each shape
+#-- can go to any bucket)
+
+(bucket:[!ps*[0,1,2,3], ps])
+
