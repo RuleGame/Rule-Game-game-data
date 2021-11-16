@@ -1,0 +1,4 @@
+# permits overspecification
+1 (1,SQUARE,*,*,[0, 1])
+1 (1,TRIANGLE,*,*,[2]) (1,CIRCLE,*,*,[3])
+(*,STAR,*,*,[1])
