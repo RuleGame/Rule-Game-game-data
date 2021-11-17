@@ -1,0 +1,5 @@
+# intended to be tricky for people who are aware of rule-0
+1 (1,TRIANGLE,*,*,[0]) (1,CIRCLE,*,*,[1, 3])
+(*,STAR,RED,*,remotest)
+(*,STAR,*,*,[nearby])
+1 (2,SQUARE,*,*,[3])
