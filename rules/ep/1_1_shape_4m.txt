@@ -1,0 +1,2 @@
+# 1:1 shape:bucket type mappings, 4 mappings (all shapes movable)
+(shape:star, bucket:[0]) (shape:triangle, bucket:[1]) (shape:square, bucket:[2]) (shape:circle, bucket:[3])

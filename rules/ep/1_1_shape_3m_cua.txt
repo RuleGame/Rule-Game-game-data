@@ -1,0 +1,2 @@
+# 1:1 shape:bucket type mappings, 3 mappings (triangle, square, circle) + complementary universal acceptor (star)
+(shape:star, bucket:[0,1,2,3]) (shape:triangle, bucket:[3]) (shape:square, bucket:[0]) (shape:circle, bucket:[1])
