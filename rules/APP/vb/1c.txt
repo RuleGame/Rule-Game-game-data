@@ -1,2 +1,2 @@
 # Rule 1c, one shape per bucket with two free shapes
-(shape:star, bucket:[1]) (shape:triangle, bucket:[2]) (shape:square, bucket:[0,1,2,3]) (shape:circle, bucket:[0,1,2,3])
+(shape:star, bucket:[0]) (shape:triangle, bucket:[1]) (shape:square, bucket:[0,1,2,3]) (shape:circle, bucket:[0,1,2,3])
