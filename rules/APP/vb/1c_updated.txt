@@ -1,0 +1,2 @@
+# Rule 1c, one shape per bucket with two free shapes
+(*,STAR,*,*,[0]) (*,TRIANGLE,*,*,[1]) (*,SQUARE,*,*,[0, 1, 2, 3]) (*,CIRCLE,*,*,[0, 1, 2, 3])
