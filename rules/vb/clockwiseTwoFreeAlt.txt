@@ -1,0 +1,5 @@
+# Rule 2c', clockwise with two free buckets, 0,*,2,* (alternative representation of 2c)
+(1,*,*,*,[0])
+(1,*,*,*,[0,1,2,3])
+(1,*,*,*,[2])
+(1,*,*,*,[0,1,2,3])
