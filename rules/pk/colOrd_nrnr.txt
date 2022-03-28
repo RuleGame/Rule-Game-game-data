@@ -1,0 +1,5 @@
+# color order alternate nearby and remotest bucket.
+(1,*,RED,*,[Nearby])
+(1,*,BLUE,*,[Remotest])
+(1,*,YELLOW,*,[Nearby])
+(1,*,BLACK,*,[Remotest])
