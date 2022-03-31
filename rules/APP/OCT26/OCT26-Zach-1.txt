@@ -1,0 +1,6 @@
+# any object can be moved, but  the one allowed bucket depends on position in a complex way. 
+(1,*,*,*,Nearby+3)
+(1,*,*,*,Remotest+1)
+
+
+

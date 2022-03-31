@@ -1,0 +1,5 @@
+#-- Each piece can go to the bucket where the most recent piece of the
+#-- same color was deposited, or to the bucket where the most recent
+#-- piece of the same shape was deposited. If no pieces of the same color
+#-- or the same shape has been moved yet, you can use the nearest bucket
+(bucket:[pc,ps, !pc*!ps*Nearby])

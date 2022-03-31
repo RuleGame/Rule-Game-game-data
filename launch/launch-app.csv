@@ -1,0 +1,5 @@
+#-- This file lists experiment plans that need to be shown on the APP
+#-- launch page (in the Part A table), in addition to the plans in
+#-- trial-lists/APP
+"APP/vm/image_test_01","This is an example of using image-and-properties-based objects"
+"vmColorTest","An example of using custom colors"
