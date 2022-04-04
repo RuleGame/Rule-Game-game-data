@@ -1,0 +1,6 @@
+#-- collect all pieces with the same color, or with the same shape
+(samecolor:1, bucket:0) (sameshape:1, bucket:1)
+#-- then all remaining horizontal ones
+(orientation:h, bucket:2)
+#-- then all vertical 
+(orientation:v, bucket:3)
