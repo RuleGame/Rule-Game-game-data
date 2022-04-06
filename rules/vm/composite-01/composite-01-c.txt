@@ -1,0 +1,6 @@
+#-- select by shape; place to buckets clockwise, starting with bucket 1
+(s:c, bucket:[!p, p+1])
+(s:s, bucket:[!p, p+1])
+(s:q, bucket:[!p, p+1])
+(s:t, bucket:[!p, p+1])
+
