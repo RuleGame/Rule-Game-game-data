@@ -2,5 +2,5 @@ rule_id,max_boards,min_points,max_points,activate_bonus_at,min_objects,max_objec
 vm/composite-01/composite-01,5,2,10,2,4,6,4,9,1,1.5,2,3,1.3,fixed,6,true,true,/composite/?/d=???/b=???/??/??/??
 vm/composite-01/composite-01-b,5,2,10,2,4,6,4,9,1,1.5,2,3,1.3,fixed,6,true,true,/composite/?2/d=??/??/??
 vm/composite-01/composite-01-c,5,2,10,2,4,6,4,9,1,1.5,2,3,1.3,fixed,6,true,true,/composite/h1/d=?/b=?/??
-vm/composite-01/composite-01-d,5,2,10,2,4,6,4,9,1,1.5,2,3,1.3,fixed,6,true,true,"/composite/?2/d=11/b=??/??/??;/composite/?2/d=11/b=??/??/??"
+vm/composite-01/composite-01-d,5,2,10,2,4,6,4,9,1,1.5,2,3,1.3,fixed,6,true,true,"/composite/v2/d=11/b=??/??/??;/composite/v2/d=11/b=??/??/??"
 
