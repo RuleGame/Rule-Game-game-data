@@ -1,0 +1,11 @@
+#-- Pick pieces in the order of the increasing value of the property "occupied", which corresponds to the number of non-blank elements in a 
+#-- composite object
+(occupied:[1..5])
+(occupied:[5..6])
+(occupied:[6..10])
+(occupied:[10..11])
+(occupied:[11..15])
+(occupied:[15..16])
+(occupied:[16..20])
+(occupied:[20..21])
+(occupied:[21..25])
