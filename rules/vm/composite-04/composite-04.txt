@@ -1,0 +1,4 @@
+#-- sort out the pieces based on the direction of stripes on them. 
+#-- Those invariant to a horizontal translation (i.e. those with horizontal stripes) go to bucket 3,
+#-- those with ascending diagonals, to bucket 1, etc
+(trans_h:1, bucket:3) (trans_v:1, bucket:0) (trans_asc:1, bucket:1) (trans_desc:1, bucket:2)
