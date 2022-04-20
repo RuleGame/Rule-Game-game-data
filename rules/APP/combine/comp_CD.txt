@@ -1,0 +1,5 @@
+#comp_CD
+(1,*,RED,*,(nearby + 3))
+(1,*,YELLOW,*,(nearby + 1))
+(1,*,BLUE,*,(nearby + 3))
+(1,*,BLACK,*,(nearby + 1)

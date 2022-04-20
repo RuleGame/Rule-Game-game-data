@@ -1,0 +1,3 @@
+#comb_F
+# intended to be a very easy position rule
+(*,*,*,*, Nearby)
