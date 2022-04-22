@@ -1,5 +1,5 @@
 #comp_CD
-(1,*,red,*,(nearby + 3))
-(1,*,yellow,*,(nearby + 1))
-(1,*,blue,*,(nearby + 3))
-(1,*,black,*,(nearby + 1))
+(1,*,red,*,(Nearby + 3))
+(1,*,yellow,*,(Nearby + 1))
+(1,*,blue,*,(Nearby + 3))
+(1,*,black,*,(Nearby + 1))
