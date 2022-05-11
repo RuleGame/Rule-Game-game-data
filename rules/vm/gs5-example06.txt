@@ -1,0 +1,4 @@
+1 (pos:T, bucket: [!p*[0,1,2,3],  p+1])
+(code: (this.pos-1)/6 == (last.pos-1)/6,    bucket:p+1)
+1 (pos:B, bucket:p+1)
+(code: (this.pos-1)/6 == (last.pos-1)/6,    bucket:p+1)
