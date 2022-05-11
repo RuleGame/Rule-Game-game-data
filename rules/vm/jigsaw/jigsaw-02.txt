@@ -1,0 +1,2 @@
+1  ()
+(seq:(last.seq+1)%4,  bucket:p)     (seq:(last.seq+3)%4,  bucket:p)

@@ -1,0 +1,9 @@
+{"id":"vb",
+ "value":[{"image":"vm/jigsaw-02/b1-nw.svg","id":"1","x":1,"y":2},
+	  {"image":"vm/jigsaw-02/b1-ne.svg","id":"2","x":2,"y":2},
+	  {"image":"vm/jigsaw-02/b1-sw.svg","id":"3","x":1,"y":1},
+	  {"image":"vm/jigsaw-02/b1-se.svg","id":"4","x":2,"y":1}
+	  
+         ],
+ 
+ "name":"One circle assembled"}

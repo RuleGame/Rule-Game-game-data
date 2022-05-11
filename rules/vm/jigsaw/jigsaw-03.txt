@@ -1,0 +1,2 @@
+1 (bucket:[  !p*[0,1,2,3],  p+1]  )
+(body:last.body, seq:[(last.seq+1)%4, (last.seq+3)%4], bucket:p)
