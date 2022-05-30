@@ -1,0 +1,10 @@
+#-- For the very first piece to be moved, you must use the bucket
+#-- farthest away from it. After that, each piece can go to the bucket
+#-- where the most recent piece of the same color was deposited, or to
+#-- the bucket where the most recent piece of the same shape was
+#-- deposited; but if no pieces of the same color or the same shape has
+#-- been moved yet, you can use any bucket other than the one to which
+#-- the most recent moved piece was deposited.
+
+(count:1,bucket:Remotest)
+(bucket:[pc,ps, !pc*!ps*[p+1,p+2,p+3]])

@@ -1,0 +1,6 @@
+# History_B: intended to be a moderate  history-based rule
+# First row means any object at start, After, CCW
+# Note the use  of * to combine a condition with a set 
+# At: http://sapir.psych.wisc.edu:7150/w2020-dev/arithmetic.html  
+(1,*,*,*, [!p*[0,1,2,3], !!p*(p+3)])
+(2,*,*,*,[(p+2)])

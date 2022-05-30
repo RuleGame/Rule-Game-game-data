@@ -1,0 +1,7 @@
+{"id":"color_high_4",
+ "value":[{"color":"YELLOW_HIGH","shape":"BIRDLOW","id":"1","x":3,"y":3},
+	  {"color":"RED_HIGH","shape":"CAMELLOW","id":"2","x":3,"y":1},
+	  {"color":"ORANGE_HIGH","shape":"CATLOW","id":"3","x":4,"y":2},
+	  {"color":"BLUE_HIGH","shape":"DUCKLOW","id":"4","x":2,"y":1}
+	 ],
+ "name":"color_high_4"}

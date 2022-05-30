@@ -1,0 +1,10 @@
+#  objects_B: intended to be a moderate diffculty object-based rule (like Stroop)
+# Uses the 3.0 orientation and specifi object capability by named arrows
+# requires the named arrow object set. Copied from vm directory on shapes.
+# desirable to restrict to only one color for this. 
+(*,"arrows/arrow-up-left",*,*,[1]) (*,"arrows/arrow-up-right",*,*,1) (*,"arrows/arrow-down-right",*,*,0) (*,"arrows/arrow-down-left",*,*,2) 
+
+
+
+
+

@@ -1,0 +1,4 @@
+#-- Put each piece into a bucket different from the one into
+#-- which the last piece of the same shape was put. The very
+#-- first piece of each shape has to go to bucket 0
+(bucket:[ps+1,ps+2,ps+3, !ps*0])

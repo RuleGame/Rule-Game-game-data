@@ -1,0 +1,9 @@
+image,name,body,seq
+b1-nw.svg,b1-nw,0,0
+b1-ne.svg,b1-ne,0,1
+b1-se.svg,b1-se,0,2
+b1-sw.svg,b1-sw,0,3
+b2-nw.svg,b2-nw,1,0
+b2-ne.svg,b2-ne,1,1
+b2-se.svg,b2-se,1,2
+b2-sw.svg,b2-sw,1,3

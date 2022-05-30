@@ -1,0 +1,2 @@
+# objects D is intendend to be difficult in a way that does not seem to depend on history. See also the syntax rules at: http://sapir.psych.wisc.edu:7150/w2020-dev/syntax.html
+(*,*,red,*,[0,1])(*,*,yellow,*,[Nearby])(*,*,blue,*,[Remotest])(*,*,black,*,[3])

@@ -1,0 +1,2 @@
+# ruleArrayName=disjunctBothLow
+(*,birdlow,*,*,[0]) (*,*,mustard_low,*,[0]) (*,camellow,*,*,[1]) (*,*,green_low,*,[1]) (*,ducklow,*,*,[2]) (*,*,brown_low,*,[2]) (*,catlow,*,*,[3]) (*,*,grey_low,*,[3])

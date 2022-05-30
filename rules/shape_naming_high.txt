@@ -1,0 +1,2 @@
+# ruleArrayName=shapeNameHigh
+(*,duckhigh,black,*,[0]) (*,camelhigh,black,*,[1]) (*,cathigh,black,*,[2]) (*,birdhigh,black,*,[3])

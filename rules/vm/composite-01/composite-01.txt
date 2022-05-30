@@ -1,0 +1,7 @@
+#-- pieces with monotonic non-increasing or non-decreasing sizes can go to one of the bucket on the side of the board to which
+# the biggest element points
+(orientation:h, d_order:1, bucket:[1,2]) (orientation:h, d_order:-1, bucket:[0,3])  (orientation:v, d_order:1, bucket:[2,3]) (orientation:v, d_order:-1, bucket:[0,1]) (d_order:0)
+#-- if no piece has been moved, put one piece into bucket 1
+(bucket:[!p])
+#-- everything else goes clockwise
+(bucket:p+1)

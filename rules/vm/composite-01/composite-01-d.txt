@@ -1,0 +1,5 @@
+#-- select by size; put into any bucket
+(d:[1,11])
+(d:[2,22])
+(d:[3,33])
+

@@ -1,0 +1,7 @@
+{"id":"both_low_4",
+ "value":[{"color":"GREEN_LOW","shape":"BIRDLOW","id":"1","x":3,"y":1},
+	  {"color":"MUSTARD_LOW","shape":"CAMELLOW","id":"2","x":6,"y":6},
+	  {"color":"BROWN_LOW","shape":"CATLOW","id":"3","x":5,"y":2},
+	  {"color":"GREY_LOW","shape":"DUCKLOW","id":"4","x":3,"y":3}
+	 ],
+ "name":"both_low_4"}

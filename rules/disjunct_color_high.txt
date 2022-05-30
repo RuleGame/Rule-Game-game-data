@@ -1,0 +1,2 @@
+# ruleArrayName=disjunctColorHigh
+(*,birdlow,*,*,[0]) (*,*,red_high,*,[0]) (*,camellow,*,*,[1]) (*,*,yellow_high,*,[1]) (*,ducklow,*,*,[2]) (*,*,orange_high,*,[2]) (*,catlow,*,*,[3]) (*,*,blue_high,*,[3])

@@ -1,0 +1,9 @@
+image,name,body,jn,js,je,jw,k,ks,ke,kw
+b1-nw.svg,b1-nw,1,1,0,0,1,0,0,0,0
+b1-ne.svg,b1-ne,1,1,0,1,0,0,0,0,0
+b1-sw.svg,b1-sw,1,0,1,0,1,0,0,0,0
+b1-se.svg,b1-se,1,0,1,1,0,0,0,0,0
+b2-nw.svg,b2-nw,2,0,0,0,0,1,0,0,1
+b2-ne.svg,b2-ne,2,0,0,0,0,1,0,1,0
+b2-sw.svg,b2-sw,2,0,0,0,0,0,1,0,1
+b2-se.svg,b2-se,2,0,0,0,0,0,1,1,0

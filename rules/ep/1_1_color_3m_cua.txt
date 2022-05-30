@@ -1,0 +1,2 @@
+# 1:1 color:bucket type mappings, 3 mappings (blue, green, yellow) + complementary universal acceptor (red)
+(color:red, bucket:[0,1,2,3]) (color:blue, bucket:[3]) (color:green, bucket:[0]) (color:yellow, bucket:[1])

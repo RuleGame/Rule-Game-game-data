@@ -1,0 +1,2 @@
+# ruleArrayName=colorNameLow
+(*,circle,brown_low,*,[0]) (*,circle,green_low,*,[1]) (*,circle,mustard_low,*,[2]) (*,circle,grey_low,*,[3])

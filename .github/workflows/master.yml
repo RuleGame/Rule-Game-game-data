@@ -64,3 +64,17 @@ jobs:
 
       - name: Upload trial-lists
         run: curl --fail -k -F "secret=${{ secrets.UPLOAD_SECRET }}" -F "build=@trial-lists.zip" "${{ secrets.UPLOAD_TRIAL_LISTS_URL }}"
+
+
+      - name: Zip launch folder
+        run: cd launch && zip -r ../launch.zip *
+
+      - name: Upload launch
+        run: curl --fail -k -F "secret=${{ secrets.UPLOAD_SECRET }}" -F "build=@launch.zip" "${{ secrets.UPLOAD_LAUNCH_URL }}"
+        
+      
+      - name: Zip modifiers folder
+        run: cd modifiers && zip -r ../modifiers.zip *
+
+      - name: Upload modifiers
+        run: curl --fail -k -F "secret=${{ secrets.UPLOAD_SECRET }}" -F "build=@modifiers.zip" "${{ secrets.UPLOAD_MODIFIERS_URL }}"

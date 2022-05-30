@@ -1,0 +1,7 @@
+# intended to be a medium difficulty  position rule
+# mixes up the orders in a not quite uniform way
+# with unequal counts and no left-right symmetry
+# players may learn a "right side rule" that covers the correct rule.
+(2,*,*,T, Nearby)
+(1,*,*,B, Nearby)
+(1,*,*,R, Nearby)

@@ -1,0 +1,3 @@
+# Easy position-based rule. English reading order. Place in nearest bucket.
+(*,*,*,L1,Nearby)
+
