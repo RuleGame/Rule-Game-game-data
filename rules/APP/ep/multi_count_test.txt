@@ -1,0 +1,2 @@
+# Test to confirm how multiple counts are decremented
+(count:1,shape:star, bucket:[0]) (count:1,shape:triangle, bucket:[1]) (count:1,shape:square, bucket:[2]) (count:1,shape:circle, bucket:[3]) (count:1,color:red, bucket:[1]) (count:1,color:blue, bucket:[2]) (count:1,color:black, bucket:[3]) (count:1,color:yellow, bucket:[0])
