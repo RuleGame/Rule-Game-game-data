@@ -1,0 +1,2 @@
+# ruleArrayName=bongards_1
+(*,line_1,*,*,[0]) (*,square_1,*,*,[0]) (*,line_3,*,*,[2]) (*,square_3,*,*,[2]) (*,line_6,*,*,[2]) (*,square_6,*,*,[2]) (*,line_8,*,*,[2]) (*,square_8,*,*,[2])
