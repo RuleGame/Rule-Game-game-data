@@ -1,3 +1,3 @@
 ﻿rule_id,max_boards,min_points,max_points,activate_bonus_at,min_objects,max_objects,shapes,min_shapes,max_shapes,feedback_switches,stack_memory_depth,stack_memory_show_order,grid_memory_show_order
-bongards_1,5,2,10,3,8,8,LINE_1;SQUARE_1;LINE_3;SQUARE_3;LINE_6;SQUARE_6;LINE_8;SQUARE_8,8,8,free,0,FALSE,FALSE
-bongards_2,5,2,10,3,8,8,STAR_2;CIRCLE_2;STAR_4;CIRCLE_4;STAR_5;CIRCLE_5;STAR_7;CIRCLE_7,8,8,free,0,FALSE,FALSE
+bongards_1,5,2,10,3,8,8,BG-LINE-1;BG-SQUARE-1;BG-LINE-3;BG-SQUARE-3;BG-LINE-6;BG-SQUARE-6;BG-LINE-8;BG-SQUARE-8,8,8,free,0,FALSE,FALSE
+bongards_2,5,2,10,3,8,8,BG-STAR-2;BG-CIRCLE-2;BG-STAR-4;BG-CIRCLE-4;BG-STAR-5;BG-CIRCLE-5;BG-STAR-7;BG-CIRCLE-7,8,8,free,0,FALSE,FALSE

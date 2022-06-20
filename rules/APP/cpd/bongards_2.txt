@@ -1,2 +1,2 @@
 # ruleArrayName=bongards_2
-(*,BG-STAR-2,*,*,[0]) (*,BG-CIRCLE-2,*,*,[0]) (*,BG-STAR-4,*,*,[2]) (*,BG-CIRCLE-4,*,*,[2]) (*,BG-STAR-5,*,*,[2]) (*,BG-CIRCLE-5,*,*,[2]) (*,BG-STAR-7,*,*,[2]) (*,BG-CIRCLE-7,*,*,[2])
+(*,[BG-STAR-2,BG-CIRCLE-2],*,*,[0]) (*,[BG-STAR-4,BG-CIRCLE-4],*,*,[2]) (*,[BG-STAR-5,BG-CIRCLE-5],*,*,[2]) (*,[BG-STAR-7,BG-CIRCLE-7],*,*,[2])

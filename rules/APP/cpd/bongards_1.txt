@@ -1,2 +1,2 @@
 # ruleArrayName=bongards_1
-(*,BG-LINE-1,*,*,[0]) (*,BG-SQUARE-1,*,*,[0]) (*,BG-LINE-3,*,*,[2]) (*,BG-SQUARE-3,*,*,[2]) (*,BG-LINE-6,*,*,[2]) (*,BG-SQUARE-6,*,*,[2]) (*,BG-LINE-8,*,*,[2]) (*,BG-SQUARE-8,*,*,[2])
+(*,[BG-LINE-1,BG-SQUARE-1],*,*,[0]) (*,[BG-LINE-3,BG-SQUARE-3],*,*,[2]) (*,[BG-LINE-6,BG-SQUARE-6],*,*,[2]) (*,[BG-LINE-8,BG-SQUARE-8],*,*,[2]) 
