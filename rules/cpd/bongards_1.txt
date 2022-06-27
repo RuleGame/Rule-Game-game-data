@@ -1,2 +1,2 @@
 # ruleArrayName=bongards_1
-(*,["bongards/lines/line_1", "bongards/squares/square_1"],*,*,[0]) (*,["bongards/lines/line_3", "bongards/squares/square_3"],*,*,[2]) (*,["bongards/lines/line_6", "bongards/squares/square_6"],*,*,[2]) (*,["bongards/lines/line_8", "bongards/squares/square_8"],*,*,[2])
+(*,[bongards/lines/line_1, bongards/squares/square_1],*,*,[0]) (*,[bongards/lines/line_3, bongards/squares/square_3],*,*,[2]) (*,[bongards/lines/line_6, bongards/squares/square_6],*,*,[2]) (*,[bongards/lines/line_8, bongards/squares/square_8],*,*,[2])
