@@ -1,0 +1,10 @@
+# ruleArrayName=monotonic_1
+# This rule has players clear the border in monotonic order (ascending)
+(*,["number/number_1"],*,*,[0,1,2,3])  
+(*,["number/number_2"],*,*,[0,1,2,3])
+(*,["number/number_3"],*,*,[0,1,2,3])
+(*,["number/number_4"],*,*,[0,1,2,3])
+(*,["number/number_5"],*,*,[0,1,2,3])
+(*,["number/number_6"],*,*,[0,1,2,3])
+(*,["number/number_7"],*,*,[0,1,2,3])
+(*,["number/number_8"],*,*,[0,1,2,3])
