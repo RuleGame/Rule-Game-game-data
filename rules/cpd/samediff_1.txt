@@ -1,4 +1,3 @@
 # ruleArrayName=samediff_1
 # This rule has players put pieces that have all the same elements on one side of the board, and pieces that have different elements on the other side
-(*,["A/same_1", "A/same_2", "A/same_3", "A/same_4"],*,*,[0,3]) 
-(*,["A/diff_1", "A/diff_2", "A/diff_3", "A/diff_4"],*,*,[1,2]) 
+(*,["A/same_1", "A/same_2", "A/same_3", "A/same_4"],*,*,[0,3]) (*,["A/diff_1", "A/diff_2", "A/diff_3", "A/diff_4"],*,*,[1,2]) 
