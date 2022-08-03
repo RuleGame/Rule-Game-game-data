@@ -1,0 +1,6 @@
+rule_id,continue,max_boards,min_points,max_points,min_objects,max_objects,b,feedback_switches,stack_memory_depth,stack_memory_show_order,grid_memory_show_order,images
+vm/composite-01/composite-01,true,2,2,10,2,2,1.5,fixed,6,true,true,/composite/?/d=???/b=???/??/??/??
+vm/composite-01/composite-01-b,false,2,2,10,3,3,1.5,fixed,6,true,true,/composite/?2/d=??/??/??
+vm/composite-01/composite-01-c,true,2,2,10,2,2,1.5,fixed,6,true,true,/composite/h1/d=?/b=?/??
+vm/composite-01/composite-01-d,false,2,2,10,3,3,1.5,fixed,6,true,true,"/composite/v2/d=11/b=??/??/??;/composite/v2/d=11/b=??/??/??"
+
