@@ -1,0 +1,3 @@
+# ruleArrayName=shape
+# This rule has players put pieces of different shapes into different buckets
+(*,["basicShape/square_blue", "basicShape/square_green", "basicShape/square_red", "basicShape/square_yellow"],*,*,[0]) (*,["basicShape/circle_blue", "basicShape/circle_green", "basicShape/circle_red", "basicShape/circle_yellow"],*,*,[1]) (*,["basicShape/triangle_blue", "basicShape/triangle_green", "basicShape/triangle_red", "basicShape/triangle_yellow"],*,*,[2]) (*,["basicShape/star_blue", "basicShape/star_green", "basicShape/star_red", "basicShape/star_yellow"],*,*,[3])

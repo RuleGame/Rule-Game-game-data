@@ -1,0 +1,17 @@
+image,name,shape,color
+square_blue.png,square_blue,basicShape/square_blue,blue
+circle_blue.png,circle_blue,basicShape/circle_blue,blue
+triangle_blue.png,triangle_blue,basicShape/triangle_blue,blue
+star_blue.png,star_blue,basicShape/star_blue,blue
+square_green.png,square_green,basicShape/square_green,green
+circle_green.png,circle_green,basicShape/circle_green,green
+triangle_green.png,triangle_green,basicShape/triangle_green,green
+star_green.png,star_green,basicShape/star_green,green
+square_red.png,square_red,basicShape/square_red,red
+circle_red.png,circle_red,basicShape/circle_red,red
+triangle_red.png,triangle_red,basicShape/triangle_red,red
+star_red.png,star_red,basicShape/star_red,red
+square_yellow.png,square_yellow,basicShape/square_yellow,yellow
+circle_yellow.png,circle_yellow,basicShape/circle_yellow,yellow
+triangle_yellow.png,triangle_yellow,basicShape/triangle_yellow,yellow
+star_yellow.png,star_yellow,basicShape/star_yellow,yellow
