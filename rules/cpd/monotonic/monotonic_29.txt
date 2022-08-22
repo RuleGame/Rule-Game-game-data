@@ -1,0 +1,3 @@
+# ruleArrayName=monotonic_29
+# This rule has players clear the board with "higher luminance" pieces in the top row, and "lower luminance" pieces in the bottom row
+(*,"luminance/luminance_5",*,*,[0,1]) (*,"luminance/luminance_3",*,*,[2,3]) 
