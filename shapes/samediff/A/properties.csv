@@ -1,9 +1,9 @@
 image,name,shape
-same_1.png,same_1,A/same_1
-same_2.png,same_2,A/same_2
-same_3.png,same_3,A/same_3
-same_4.png,same_4,A/same_4
-diff_1.png,diff_1,A/diff_1
-diff_2.png,diff_2,A/diff_2
-diff_3.png,diff_3,A/diff_3
-diff_4.png,diff_4,A/diff_4
+same_a.png,same_a,A/same_a
+same_b.png,same_b,A/same_b
+same_c.png,same_c,A/same_c
+same_d.png,same_d,A/same_d
+diff_12a.png,diff_12a,A/diff_12a
+diff_12b.png,diff_12b,A/diff_12b
+diff_12c.png,diff_12c,A/diff_12c
+diff_12d.png,diff_12d,A/diff_12d

@@ -1,3 +1,0 @@
-# ruleArrayName=monotonic_6
-# This rule has players clear the board with "higher number" pieces in the top row, and "lower number" pieces in the bottom row
-(*,"number/number_8",*,*,[0,1]) (*,"number/number_5",*,*,[2,3]) 
