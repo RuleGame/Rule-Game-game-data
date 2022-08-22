@@ -1,3 +1,0 @@
-rule_id,continue,max_boards,min_points,max_points,min_objects,max_objects,b,clear_how_many,clearing_threshold,feedback_switches,stack_memory_depth,stack_memory_show_order,grid_memory_show_order,initial_boards_order,images
-cpd/monotonic_2,true,1,2,10,2,2,1.5,2,1,free,6,FALSE,FALSE,alpha,monotonicity/number/low/number_4.png;monotonicity/number/high/number_8.png
-cpd/monotonic_3,false,1,2,10,2,2,1.5,2,1,free,6,FALSE,FALSE,alpha,monotonicity/number/low/number_6.png;monotonicity/number/high/number_7.png
