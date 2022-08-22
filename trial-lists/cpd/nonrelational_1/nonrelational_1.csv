@@ -1,3 +1,3 @@
 rule_id,continue,max_boards,min_points,max_points,min_objects,max_objects,b,clear_how_many,clearing_threshold,feedback_switches,initial_boards_order,images 
-shapeMatch_1,false,6,2,10,8,8,1.5,2,1.3,free,*
+cpd/shape,false,6,2,10,8,8,1.5,2,1.3,free,alpha,shape/*.png
 cpd/size,false,6,2,10,8,8,1.5,2,1.3,free,alpha,size/*.png
