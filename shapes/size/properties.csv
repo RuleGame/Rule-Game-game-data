@@ -1,0 +1,17 @@
+image,name,shape,size,color
+blue_1.png,blue_1,size/blue_1,size_1,blue
+blue_2.png,blue_2,size/blue_2,size_2,blue
+blue_3.png,blue_3,size/blue_3,size_3,blue
+blue_4.png,blue_4,size/blue_4,size_4,blue
+green_1.png,green_1,size/green_1,size_1,green
+green_2.png,green_2,size/green_2,size_2,green
+green_3.png,green_3,size/green_3,size_3,green
+green_4.png,green_4,size/green_4,size_4,green
+red_1.png,red_1,size/red_1,size_1,red
+red_2.png,red_2,size/red_2,size_2,red
+red_3.png,red_3,size/red_3,size_3,red
+red_4.png,red_4,size/red_4,size_4,red
+yellow_1.png,yellow_1,size/yellow_1,size_1,yellow
+yellow_2.png,yellow_2,size/yellow_2,size_2,yellow
+yellow_3.png,yellow_3,size/yellow_3,size_3,yellow
+yellow_4.png,yellow_4,size/yellow_4,size_4,yellow

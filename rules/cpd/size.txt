@@ -1,0 +1,3 @@
+# ruleArrayName=size
+# This rule has players put pieces of different sizes into different buckets
+(*,["size/blue_1", "size/green_1", "size/red_1", "size/yellow_1"],*,*,[0]) (*,["size/blue_2", "size/green_2", "size/red_2", "size/yellow_2"],*,*,[1]) (*,["size/blue_3", "size/green_3", "size/red_3", "size/yellow_3"],*,*,[2]) (*,["size/blue_4", "size/green_4", "size/red_4", "size/yellow_4"],*,*,[3])
