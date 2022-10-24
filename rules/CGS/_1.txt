@@ -1,2 +1,2 @@
-# Color Match: Each bucket collects pieces of one color
+# [Color Match] Each bucket collects pieces of one color
 (*,*,black,*,[0]) (*,*,yellow,*,[1]) (*,*,blue,*,[2]) (*,*,red,*,[3])
