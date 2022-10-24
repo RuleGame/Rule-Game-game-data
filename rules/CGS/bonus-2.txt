@@ -1,0 +1,2 @@
+# [Bonus-2] A harder rule involving piece position
+(*,*,*,L1, Nearby)

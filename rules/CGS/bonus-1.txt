@@ -1,2 +1,2 @@
-# [Bonus] Shape Match: similar to Color Match
+# [Bonus-1] Similar to Color Match
 (*,star,*,*,[0]) (*,triangle,*,*,[1]) (*,square,*,*,[2]) (*,circle,*,*,[3])
