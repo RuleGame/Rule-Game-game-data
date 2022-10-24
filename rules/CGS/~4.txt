@@ -1,0 +1,3 @@
+# [Bonus-4] An alternating rule with pieces sometimes immovable
+1 (1, square, *, *,[0]) (1,triangle,*,*,[1])
+1 (1, circle, *, *,[2]) (1,star,*,*,[3])
