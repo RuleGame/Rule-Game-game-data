@@ -1,0 +1,2 @@
+# Color match: each bucket collects pieces of one color
+(bucket:pc) (code:[!pc]*[!q.bucket])
