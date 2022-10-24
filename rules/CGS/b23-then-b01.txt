@@ -1,3 +1,0 @@
-# B23 then B01: Alternate lower and upper buckets
-(1,*,*,*,[2,3])  
-(1,*,*,*,[0,1])
