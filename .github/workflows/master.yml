@@ -78,3 +78,10 @@ jobs:
 
       - name: Upload modifiers
         run: curl --fail -k -F "secret=${{ secrets.UPLOAD_SECRET }}" -F "build=@modifiers.zip" "${{ secrets.UPLOAD_MODIFIERS_URL }}"
+
+        
+      - name: Zip pregame folder
+        run: cd pregame && zip -r ../pregame.zip *
+
+      - name: Upload pregame
+        run: curl --fail -k -F "secret=${{ secrets.UPLOAD_SECRET }}" -F "build=@pregame.zip" "${{ secrets.UPLOAD_PREGAME_URL }}"
