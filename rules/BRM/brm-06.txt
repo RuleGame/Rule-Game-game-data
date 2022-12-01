@@ -1,0 +1,6 @@
+#  Alternate lower and upper buckets, starting at either position
+(count:1)
+(bucket:[(p/2)*2+2, (p/2)*2+3])
+
+
+

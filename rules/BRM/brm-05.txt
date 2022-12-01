@@ -1,0 +1,4 @@
+# [B23 then B01] Alternate lower and upper buckets
+(count:1,bucket:[2,3])  
+(count:1,bucket:[0,1])  
+

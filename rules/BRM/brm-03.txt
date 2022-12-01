@@ -1,0 +1,4 @@
+# [Clockwise] Permitted bucket moves in clockwise order, starting anywhere
+(count:1)
+(bucket:p+1)
+

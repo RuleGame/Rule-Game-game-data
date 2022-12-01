@@ -1,0 +1,1 @@
+(color:black,bucket:0) (color:yellow,bucket:1) (color:blue,bucket:2) (color:red,bucket:3)
