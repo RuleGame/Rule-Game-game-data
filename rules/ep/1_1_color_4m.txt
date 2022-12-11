@@ -1,0 +1,2 @@
+# 1:1 color:bucket type mappings, 4 mappings (blue, green, yellow, red)
+(color:red, bucket:[2]) (color:blue, bucket:[3]) (color:green, bucket:[0]) (color:yellow, bucket:[1])
