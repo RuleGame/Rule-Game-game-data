@@ -1,0 +1,6 @@
+# shape order square circle triangle star
+(1,SQUARE,*,*,[0, 1, 2, 3])
+(1,CIRCLE,*,*,[0, 1, 2, 3])
+(1,TRIANGLE,*,*,[0, 1, 2, 3])
+(1,STAR,*,*,[0, 1, 2, 3])
+
