@@ -1,2 +1,3 @@
 # [Bonus-2] A harder rule involving piece position
+#Display: Bonus puzzle 2
 (*,*,*,L1, Nearby)

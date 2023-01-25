@@ -1,3 +1,4 @@
 # [B23 then B01] Alternate lower and upper buckets
+#Display: Puzzle 3
 (1,*,*,*,[2,3])  
 (1,*,*,*,[0,1])

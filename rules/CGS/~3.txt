@@ -1,3 +1,4 @@
 # [Bonus-3] A harder alternating rule
+#Display: Bonus puzzle 3
 1 (*,*,black,*,[0]) (*,*,yellow,*,[1]) (*,*,blue,*,[2]) (*,*,red,*,[3])
 1 (*,star,*,*,[0]) (*,triangle,*,*,[1]) (*,square,*,*,[2]) (*,circle,*,*,[3])
