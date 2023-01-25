@@ -1,3 +1,3 @@
 # [Bonus-1] Similar to Color Match
-#Display: Bonus puzzle 1
+#Display: Shapely
 (*,star,*,*,[0]) (*,triangle,*,*,[1]) (*,square,*,*,[2]) (*,circle,*,*,[3])
