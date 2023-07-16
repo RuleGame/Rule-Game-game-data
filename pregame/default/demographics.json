@@ -61,6 +61,15 @@
     ]
   },
   {
+    "type": "checkbox",
+    "name": "car",
+    "title": "Do you play any of these games?",
+    "choices": ["chess", "poker", "sudoku", "crossword puzzles"],
+    "isRequired": true,
+    "showNoneItem": true,
+    "separateSpecialChoices": true
+  },
+  {
     "type": "text",
     "name": "comments",
     "isRequired": false,
