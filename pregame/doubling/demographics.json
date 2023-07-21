@@ -61,13 +61,43 @@
     ]
   },
   {
-    "type": "checkbox",
-    "name": "car",
-    "title": "Do you play any of these games?",
-    "choices": ["chess", "poker", "sudoku", "crossword puzzles"],
-    "isRequired": true,
-    "showNoneItem": true,
-    "separateSpecialChoices": true
+    "type": "matrix",
+    "name": "matrix-games",
+    "title": "How frequently you play any of these games?",
+    "columns": [
+      {
+        "value": "N",
+        "text": "Never"
+      },
+      {
+        "value": "Y",
+        "text": "Yearly"
+      },
+      {
+        "value": "M",
+        "text": "Monthly"
+      }
+    ],
+    "rows": [
+      {
+        "value": "Chess",
+        "text": "Chess"
+      },
+      {
+        "value": "Poker",
+        "text": "Poker"
+      },
+      {
+        "value": "Sudoku",
+        "text": "Sudoku"
+      },
+      {
+        "value": "Crossword Puzzles",
+        "text": "Crossword Puzzles"
+      }
+    ],
+    "alternateRows": true,
+    "isAllRowRequired": true
   },
   {
     "type": "text",
