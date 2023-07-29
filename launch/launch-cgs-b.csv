@@ -2,6 +2,10 @@
 #CGS/_2,Take Time
 #CGS/_3,Bouncing
 #CGS/_4,LongBounce
+CGS/1_sm.txt,ShapeMatch
+CGS/2_qn.txt,QuadrantNearby
+CGS/3_bltr.txt,BottomLeftTopRight
+CGS/4_cw.txt,Clockwise
 CGS/~1,Shapely
 CGS/~2,Combine_RN
 CGS/~3,Combine_CS
