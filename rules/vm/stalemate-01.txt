@@ -1,2 +1,2 @@
-#-- a stalemate example
+#-- A stalemate example
 (color:[red,yellow], pos:T, bucket:[0,1]) (color:[blue,black], pos:B, bucket:[2,3])
