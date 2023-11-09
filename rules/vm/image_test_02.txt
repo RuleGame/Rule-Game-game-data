@@ -1,3 +1,3 @@
 #-- Arrow objects are to be put to buckets depending on their direction and
-#-- color
+#-- color.
 (color:[red,orange], angle:[1..89], bucket:[1]) (color:[red,orange], angle:[91..179], bucket:[0]) (color:[red,orange], angle:[181..269], bucket:[3]) (color:[red,orange], angle:[271..359], bucket:[2]) (color:[red,orange], angle:0, bucket:[1,2]) (color:[red,orange], angle:90, bucket:[0,1]) (color:[red,orange], angle:180, bucket:[0,3]) (color:[red,orange], angle:270, bucket:[2,3]) (color:[green,blue], angle:[1..89], bucket:[3]) (color:[green,blue], angle:[91..179], bucket:[2]) (color:[green,blue], angle:[181..269], bucket:[1]) (color:[green,blue], angle:[271..359], bucket:[0]) (color:[green,blue], angle:0, bucket:[0,3]) (color:[green,blue], angle:90, bucket:[2,3]) (color:[green,blue], angle:180, bucket:[1,2]) (color:[green,blue], angle:270, bucket:[0,1])
