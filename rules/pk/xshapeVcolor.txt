@@ -1,0 +1,3 @@
+# to see whether naive pplayers are more likely to find shape or color match. 
+(xshape:square,bucket:0) (xshape:circle,bucket:1) (xshape:triangle,bucket:2) (xshape:star,bucket:3)  (xcolor:red,bucket:0) (xcolor:yellow,bucket:1) (xcolor:green,bucket:2) (xcolor:blue,bucket:3)
+
