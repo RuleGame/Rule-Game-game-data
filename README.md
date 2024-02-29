@@ -1,6 +1,7 @@
 ## Rule Game `game-data`
 
-This Git repository serves as a place to store and track game-data folders for the Rule-Game server.
+This Git repository serves as a place to store and track the experiment control filee, i.e. the
+game-data folders, for the Rule-Game server.
 
 ## Requirements
 
