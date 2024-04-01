@@ -76,11 +76,11 @@
       {
         "value": "M",
         "text": "Monthly"
-      }
+      },
       {
         "value": "W",
         "text": "Weekly"
-      } 
+      }, 
       {
         "value": "D",
         "text": "Daily"
@@ -112,7 +112,7 @@
     "name": "comments",
     "isRequired": false,
     "title": "If you have any comments for us, please enter them here"
-  }
+  },
   {
     "type": "text",
     "name": "expert_willing",
