@@ -1,0 +1,3 @@
+# to see whether naive pplayers are more likely to find shape or color match. 
+(shape:square,bucket:0) (shape:circle,bucket:1) (shape:triangle,bucket:2) (shape:star,bucket:3)  (color:red,bucket:0) (color:yellow,bucket:1) (color:green,bucket:2) (color:blue,bucket:3)
+

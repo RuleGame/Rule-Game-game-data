@@ -1,0 +1,2 @@
+# shape match    Large Feedback Short Instructions 20 pieces
+(*,star,*,*,[0]) (*,triangle,*,*,[1]) (*,square,*,*,[2]) (*,circle,*,*,[3])
