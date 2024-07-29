@@ -1,0 +1,3 @@
+#-- Objects of different sizes go to different buckets
+(d:1, bucket:0) (d:2, bucket:1) (d:3, bucket:2)
+

@@ -1,0 +1,22 @@
+[
+    {
+        "goodnessGE": 1,
+        "type": "radiogroup",
+        "name": "subsequent",
+        "isRequired": true,
+        "title": "You performed very well in our game! Would you like to be contacted in order to participate in additional experiments?",
+        "choices": [
+            "1|Yes",
+            "0|No"
+        ],
+        "colCount": 0
+    },
+    {
+        "goodnessLT": 0.25,
+        "type": "text",
+        "name": "whySoPoor",
+        "title": "Why do you think you performed so poorly?"
+    }
+]  
+  
+  

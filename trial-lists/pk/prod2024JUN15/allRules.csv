@@ -1,0 +1,8 @@
+rule_id,max_boards,min_points,max_points,min_objects,max_objects,min_shapes,max_shapes,min_colors,max_colors,b,clearing_threshold,feedback_switches,stack_memory_depth,stack_memory_show_order,grid_memory_show_order,give_up_at,x2_after,x4_after,pregame,images
+pk/shapeVcolor,5,2,10,20,20,4,4,4,4,1.5,1.3,free,10,TRUE,TRUE,0,5,10,doubleMaxFeedback,pk/shapeVcolor/*.png
+pk/position_Aread,5,2,10,20,20,4,4,4,4,1.5,1.3,free,10,TRUE,TRUE,0,5,10,doubleMaxFeedback,
+pk/position_A,5,2,10,20,20,4,4,4,4,1.5,1.3,free,10,TRUE,TRUE,0,5,10,doubleMaxFeedback,
+pk/col_oneEach_Ord_RBYK,5,2,10,20,20,4,4,4,4,1.5,1.3,free,10,TRUE,TRUE,0,5,10,doubleMaxFeedback,
+pk/colOrd_oneEach_shBckt,5,2,10,20,20,4,4,4,4,1.5,1.3,free,10,TRUE,TRUE,0,5,10,doubleMaxFeedback,
+pk/Sh_Bckt,5,2,10,20,20,4,4,4,4,1.5,1.3,free,10,TRUE,TRUE,0,5,10,doubleMaxFeedback,
+pk/position_Anearby,5,2,10,20,20,4,4,4,4,1.5,1.3,free,10,TRUE,TRUE,0,5,10,doubleMaxFeedback,

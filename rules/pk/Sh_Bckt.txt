@@ -1,0 +1,2 @@
+#  shape controls bucket.
+(*,SQUARE,*,*,[0]) (*,TRIANGLE,*,*,[1]) (*,STAR,*,*,[2]) (*,CIRCLE,*,*,[3])
