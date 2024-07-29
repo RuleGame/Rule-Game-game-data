@@ -1,0 +1,1 @@
+(color_indices:1, bucket:1) (color_indices:2, bucket:2) (color_indices:3, bucket:3) (color_indices:4, bucket:0)
