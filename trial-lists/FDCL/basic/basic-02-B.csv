@@ -1,0 +1,5 @@
+rule_id,max_boards,min_points,max_points,min_objects,max_objects,min_shapes,max_shapes,min_colors,max_colors,b,clearing_threshold,feedback_switches,stack_memory_depth,stack_memory_show_order,grid_memory_show_order,give_up_at,x2_after,x4_after,pregame
+FDCL/basic/ordL1,3,2,10,9,9,4,4,4,4,1.5,1.3,free,9,TRUE,TRUE,2,5,10,BayesIncent
+FDCL/basic/quadNearby,3,2,10,9,9,4,4,4,4,1.5,1.3,free,9,TRUE,TRUE,2,5,10,BayesIncent
+FDCL/basic/ordL1_Nearby,3,2,10,9,9,4,4,4,4,1.5,1.3,free,9,TRUE,TRUE,2,5,10,BayesIncent
+FDCL/basic/col1OrdBuck_BRKY3120,3,2,10,9,9,4,4,4,4,1.5,1.3,free,9,TRUE,TRUE,2,5,10,BayesIncent
