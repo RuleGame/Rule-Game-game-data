@@ -1,0 +1,15 @@
+# 9-B
+# 1q in reading order 
+# 1c in reading order 
+# 1t in reading order 
+# 1s in reading order 
+#
+# Shapes in order. One square, one circle, skip if none of that shape.
+# Must take next object in reading order, of that shape:
+# shaOrdL1_qcts
+
+1 (shape:square, postpos:L1)
+1 (shape:circle, postpos:L1)
+1 (shape:triangle, postpos:L1)
+1 (shape:star, postpos:L1)
+

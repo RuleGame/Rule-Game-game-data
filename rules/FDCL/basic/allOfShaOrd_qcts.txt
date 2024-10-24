@@ -1,0 +1,7 @@
+# Shapes in order 
+# *q *c *t *s 
+
+(shape:square)
+(shape:circle)
+(shape:triangle)
+(shape:star)

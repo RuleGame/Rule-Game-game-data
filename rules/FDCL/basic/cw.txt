@@ -1,0 +1,5 @@
+# 10-A
+# Clockwise starting anywhere: cw
+
+1 ()
+(bucket:[p+1])

@@ -1,0 +1,10 @@
+# Colors in order. One blue, one red, skip if none of that color. Loop
+# 1K 1R 1B  1Y
+
+1 (color:black)
+1 (color:red)
+1 (color:blue)
+1 (color:yellow)
+
+
+

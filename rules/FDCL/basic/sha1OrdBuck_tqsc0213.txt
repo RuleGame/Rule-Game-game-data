@@ -1,0 +1,11 @@
+# 6-B
+# 1t [0]
+# 1q [2]
+# 1s [1]
+# 1c [3]
+# Shapes in order.. sha1OrdBuck_tqsc0213
+
+1 (shape:triangle, bucket:0)
+1 (shape:square, bucket:2)
+1 (shape:star, bucket:1)
+1 (shape:circle, bucket:3)

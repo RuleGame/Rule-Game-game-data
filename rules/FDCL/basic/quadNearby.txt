@@ -1,0 +1,5 @@
+# Put each game piece to the nearest bucket
+
+(bucket:Nearby)
+
+

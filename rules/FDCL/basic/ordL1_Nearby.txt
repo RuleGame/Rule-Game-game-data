@@ -1,0 +1,5 @@
+# 8-A
+# Remove pieces in reading order, put into the nearest bucket;
+# ordL1_Nearby
+
+(pos:L1, bucket:Nearby)

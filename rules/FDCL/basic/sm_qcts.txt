@@ -1,0 +1,4 @@
+# SHAPE MATCH
+
+
+(shape:square, bucket:0) (shape:circle, bucket:1) (shape:triangle, bucket:2) (shape:star, bucket:3)

@@ -1,0 +1,15 @@
+# 9-B
+# 1c in reading order 
+# 1s in reading order 
+# 1q in reading order 
+# 1t in reading order 
+#
+# Shapes in order. 
+# Must take next object in reading order, of that shape:
+# shaOrdL1_csqt
+
+1 (shape:circle, postpos:L1)
+1 (shape:star, postpos:L1)
+1 (shape:square, postpos:L1)
+1 (shape:triangle, postpos:L1)
+

@@ -1,0 +1,7 @@
+# Colors in order: B R K Y.
+# Colors in order. All blue before any red, etc.
+
+(color:blue)
+(color:red)
+(color:black)
+(color:yellow)

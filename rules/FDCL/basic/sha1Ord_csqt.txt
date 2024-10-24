@@ -1,0 +1,12 @@
+# 0, 1, 2, 3 
+# 1c
+# 1s 
+# 1q 
+# 1t 
+# Shapes in order.. sha1Ord_csqt
+
+1 (shape:circle)
+1 (shape:star)
+1 (shape:square)
+1 (shape:triangle)
+

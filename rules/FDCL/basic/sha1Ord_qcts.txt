@@ -1,0 +1,11 @@
+# 0, 1, 2, 3 
+# 1q 
+# 1c 
+# 1t 
+# 1s 
+# Shapes in order.. sha1Ord_qcts
+
+1 (shape:square)
+1 (shape:circle)
+1 (shape:triangle)
+1 (shape:star)

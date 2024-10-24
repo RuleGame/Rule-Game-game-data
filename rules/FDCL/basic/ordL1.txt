@@ -1,0 +1,4 @@
+# 7-A
+# Remove pieces in reading order [L1]   Any bucket  ordL1
+
+(pos:L1)

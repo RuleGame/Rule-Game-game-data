@@ -1,0 +1,15 @@
+# 6-A
+#1B[0] 
+#1R[2] 
+#1K[1] 
+#1Y[3] 
+#Colors in order. And specific bucket. Loop 
+
+
+1 (color:blue, bucket:0)
+1 (color:red, bucket:2)
+1 (color:black, bucket:1)
+1 (color:yellow, bucket:3)
+
+
+

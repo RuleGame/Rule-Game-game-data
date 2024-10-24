@@ -1,0 +1,16 @@
+# 9-A
+# 1B in reading order 
+# 1R in reading order 
+# 1K in reading order 
+# 1Y in reading order 
+#
+# Colors in order. One blue, one red, skip if none of that color.
+# Must take next object in reading order, of that color
+
+# colOrdL1_BRKY 
+
+1 (color:blue, postpos:L1)
+1 (color:red, postpos:L1)
+1 (color:black, postpos:L1)
+1 (color:yellow, postpos:L1)
+
