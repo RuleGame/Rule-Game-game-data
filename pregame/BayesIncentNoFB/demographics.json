@@ -126,10 +126,7 @@
         "type": "text",
         "name": "conditional_expert_willing",
         "isRequired": false,
-        "title": "Congratulations! you have solved all of the puzzles you worked 
-on. If you are interested in continuing to work with this project, please insert 
-your email in this box. We may follow up with an email that would come to you 
-from paul.kantor@rutgers.edu  sometime in the next six months "
+        "title": "Congratulations! you have solved all of the puzzles you worked on. If you are interested in continuing to work with this project, please insert your email in this box. We may follow up with an email that would come to you from paul.kantor@rutgers.edu  sometime in the next six months"
     },
     {
         "goodnessLT": 0.1,

@@ -1,4 +1,4 @@
-max_boards,min_points,max_points,min_objects,max_objects,min_shapes,max_shapes,min_colors,max_colors,b,clearing_threshold,feedback_switches,stack_memory_depth,stack_memory_show_order,grid_memory_show_order,give_up_at,x2_after,x4_after,pregame
-3,2,10,9,9,4,4,4,4,1.5,1.3,free,0,FALSE,FALSE,2,5,10,BayesIncent
+max_boards,min_points,max_points,min_objects,max_objects,min_shapes,max_shapes,min_colors,max_colors,b,clearing_threshold,feedback_switches,stack_memory_depth,stack_memory_show_order,grid_memory_show_order,give_up_at,x2_likelihood,x4_likelihood,pregame
+3,2,10,9,9,4,4,4,4,1.5,1.3,free,0,FALSE,FALSE,2,1000,1000000,BayesIncentNoFB
 
 
