@@ -1,0 +1,3 @@
+#-- For ML, this should be similar to quadMixed or quadNearby
+
+(pos:[ 1,3,33,25,5,24,8,36,19], bucket:0) (pos:[15,26,4,13,30,18,9,22,27], bucket:1) (pos:[11,35,2,6,28,10,14,31,32], bucket:2) (pos:[23,7,34,21,16,17,12,20,29], bucket:3)
