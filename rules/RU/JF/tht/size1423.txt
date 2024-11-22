@@ -1,1 +1,1 @@
-(size_indices:0, bucket:3) (size_indices:1, bucket:0) (size_indices:2, bucket:0) (size_indices:3, bucket:3)
+(size_indices:0, bucket:0) (size_indices:1, bucket:1) (size_indices:2, bucket:1) (size_indices:3, bucket:0)
