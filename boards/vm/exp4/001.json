@@ -1,0 +1,5 @@
+
+{"id":0,"name":"Just some random board","value":[
+    {"id":0,"x":1,"y":1,"image":"RU/JF/tht/shape_2_3_3.png"},
+    {"id":1,"x":2,"y":1,"image":"RU/JF/tht/shape_2_1_3.png"},
+    {"id":2,"x":3,"y":1,"image":"RU/JF/tht/shape_3_3_1.png"}]}
