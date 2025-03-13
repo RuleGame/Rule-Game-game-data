@@ -1,0 +1,5 @@
+#-- The training boards must have all of their elements outside of the top left quarter,
+#-- while the testing boards must have at least 1 element inside of that quarter.
+#-- Therefore, the position list lists all positions inside of that quarter
+(pos:[19,20,21, 25,26,27, 31,32,33])
+
