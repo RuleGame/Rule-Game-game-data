@@ -1,0 +1,44 @@
+We are playing a guessing game.
+
+There is a square board that consists of 36 cells, in 6 rows and 6 columns. Each cell is identified by its column number X  (0 < X < 7) and its row number Y (0 < Y < 7).  Next to the board, there are four buckets, located near the corners of the board as follows:
+Bucket 0, at  X=0,Y=7;
+Bucket 1, at  X=7,Y=7;
+Bucket 2, at  X=7,Y=0;
+Bucket 3, at  X=0,Y=0.
+
+The game consists of many episodes. At the beginning of each episode, several objects are placed into some cells of the board. No more than 1 object is placed into each cell. Each object has a unique ID (an integer number), color  (one of "red", "blue", "black", "yellow") and shape ("square", "circle", "triangle", "star"). The position of an object on the board can be described by its coordinates: the column number X and the row number Y, which can have the values  {1,2,3,4,5,6}).
+
+At the beginning of each episode, I will describe the initial content of the board by listing the positions and the properties of the objects in the following way, using JSON format, for example:
+
+{"value":[{"id": 0, "color":"YELLOW","shape":"TRIANGLE","x":5,"y":1},
+{"id": 1, "color":"BLUE","shape":"SQUARE","x":2,"y":2},
+{"id": 2, "color":"YELLOW","shape":"TRIANGLE","x":5,"y":2}]}
+
+You are the player. You can make a "move attempt", that is try to pick an object from the board and to place them into one of the buckets.
+
+At any time, only some of the objects can be picked from the board, and they can be placed only into some of the buckets. However, you don't know which objects can be picked, and into which buckets they can be placed. The rule that determines this is a secret; it may depend on the objects' positions on the board, their shapes and colors, as well as your previous successful moves.
+
+Since your don't know the secret rule, your move attempt may be successful (the chosen object is moved from the board to the chosen bucket), or it may fail (your chosen object either cannot be moved, or cannot be accepted by the bucket you chose). You can make more move attempts, until the board is empty; that will end the episode. After that, I can start another episode, with the same underlying secret rule, and so on.
+
+Your ultimate task is to find the secret rule, by trial and error, so that eventually you can clear a board without making any mistakes.
+
+If we have played any episodes already, I will tell you about each completed episode, describing its initial board and your moves during the episode, in the following format:
+"MOVE id bucketId response",
+where "id" is the ID of the object that you attempted to move, "bucketId" is the ID of the bucket into which you wanted to place it, and "response" is whatever response I have given to that move. The response is one word, which can be one of the following: ACCEPT, IMMOVABLE, DENY, INVALID.
+"ACCEPT" means that you have successfully removed the object from the board, by placing it to your chosen bucket, so that this cell is now empty.
+"IMMOVABLE" means that the object you have tried to move cannot at present be moved to any bucket, and the object stays on the board.
+"DENY" means that even the object you have picked can be moved to some bucket, it cannot be moved to the bucket you have chosen.
+"INVALID" means that your description of the move was in an invalid format, or was impossible (for example, you tried to pick an object from an empty cell).
+
+I will also desribe the initial board of the current episode, and any moves that you have made already, in the same format.
+
+I will then ask you, "YOUR MOVE?", and then you can try to pick an object from one of the cells and to move that object to one of the buckets. Please describe your attempted action to me in the following format:
+"MOVE id bucketId"
+where "id" is the ID of the object you are attempting to move, and "bucketId" is the ID of the bucket into which you want to place it. 
+"MOVE 5 0"
+means "I want to move the object with ID=5 to the Bucket with ID=0".
+
+
+After that, I can ask "YOUR MOVE?" again, so that you can make your next move attempt.  I can also tell you "EXPLAIN", asking you to describe your guess of what the secret rule may be.
+
+
