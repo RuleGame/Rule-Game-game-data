@@ -28,7 +28,7 @@ where "id" is the ID of the object that you attempted to move, "bucketId" is the
 "ACCEPT" means that you have successfully removed the object from the board, by placing it to your chosen bucket, so that this cell is now empty.
 "IMMOVABLE" means that the object you have tried to move cannot at present be moved to any bucket, and the object stays on the board.
 "DENY" means that even the object you have picked can be moved to some bucket, it cannot be moved to the bucket you have chosen.
-"INVALID" means that your description of the move was in an invalid format, or was impossible (for example, you tried to pick an object from an empty cell).
+"INVALID" means that your description of the move was in an invalid format, or was impossible (for example, you entered the ID of an object that has already been removed earlier).
 
 I will also desribe the initial board of the current episode, and any moves that you have made already, in the same format.
 
