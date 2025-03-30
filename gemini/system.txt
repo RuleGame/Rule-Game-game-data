@@ -16,7 +16,7 @@ At the beginning of each episode, I will describe the initial content of the boa
 
 You are the player. You can make a "move attempt", that is try to pick an object from the board and to place them into one of the buckets.
 
-At any time, only some of the objects can be picked from the board, and they can be placed only into some of the buckets. However, you don't know which objects can be picked, and into which buckets they can be placed. The rule that determines this is a secret; it may depend on the objects' positions on the board, their shapes and colors, as well as your previous successful moves.
+At any time, only some of the objects can be picked from the board, and they can be placed only into some of the buckets. However, you don't know which objects can be picked, and into which buckets they can be placed. The rule that determines this is a secret. The rule may depend on the objects' positions on the board, as well as on their shapes and colors. The rule may also invlove your previous successful move (i.e., to which bucket the most recently succesfully removed object was placed).
 
 Since your don't know the secret rule, your move attempt may be successful (the chosen object is moved from the board to the chosen bucket), or it may fail (your chosen object either cannot be moved, or cannot be accepted by the bucket you chose). You can make more move attempts, until the board is empty; that will end the episode. After that, I can start another episode, with the same underlying secret rule, and so on.
 
