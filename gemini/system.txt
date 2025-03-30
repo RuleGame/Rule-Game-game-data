@@ -23,17 +23,17 @@ Since your don't know the secret rule, your move attempt may be successful (the 
 Your ultimate task is to find the secret rule, by trial and error, so that eventually you can clear a board without making any mistakes.
 
 If we have played any episodes already, I will tell you about each completed episode, describing its initial board and your moves during the episode, in the following format:
-"MOVE id bucketId response",
-where "id" is the ID of the object that you attempted to move, "bucketId" is the ID of the bucket into which you wanted to place it, and "response" is whatever response I have given to that move. The response is one word, which can be one of the following: ACCEPT, IMMOVABLE, DENY, INVALID.
+"MOVE objectId bucketId response",
+where "objectId" is the ID of the object that you attempted to move, "bucketId" is the ID of the bucket into which you wanted to place it, and "response" is whatever response I have given to that move. The response is one word, which can be one of the following: ACCEPT, IMMOVABLE, DENY, INVALID.
 "ACCEPT" means that you have successfully removed the object from the board, by placing it to your chosen bucket, so that this cell is now empty.
-"IMMOVABLE" means that the object you have tried to move cannot at present be moved to any bucket, and the object stays on the board.
+"IMMOVABLE" means that the object you have tried to move cannot at present be moved to any bucket, and the object stays on the board. This mean that you should not try to attempt to move this object again until the board has changed in some way (i.e. some other object has been successfully removed).
 "DENY" means that even the object you have picked can be moved to some bucket, it cannot be moved to the bucket you have chosen.
 "INVALID" means that your description of the move was in an invalid format, or was impossible (for example, you entered the ID of an object that has already been removed earlier).
 
 I will also desribe the initial board of the current episode, and any moves that you have made already, in the same format.
 
 I will then ask you, "YOUR MOVE?", and then you can try to pick an object from one of the cells and to move that object to one of the buckets. Please describe your attempted action to me in the following format:
-"MOVE id bucketId"
+"MOVE objectId bucketId"
 where "id" is the ID of the object you are attempting to move, and "bucketId" is the ID of the bucket into which you want to place it. 
 "MOVE 5 0"
 means "I want to move the object with ID=5 to the Bucket with ID=0".
