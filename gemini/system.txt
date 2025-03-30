@@ -27,7 +27,7 @@ If we have played any episodes already, I will tell you about each completed epi
 where "objectId" is the ID of the object that you attempted to move, "bucketId" is the ID of the bucket into which you wanted to place it, and "response" is whatever response I have given to that move. The response is one word, which can be one of the following: ACCEPT, IMMOVABLE, DENY, INVALID.
 "ACCEPT" means that you have successfully removed the object from the board, by placing it to your chosen bucket, so that this cell is now empty.
 "IMMOVABLE" means that the object you have tried to move cannot at present be moved to any bucket, and the object stays on the board. This mean that you should not try to attempt to move this object again until the board has changed in some way (i.e. some other object has been successfully removed).
-"DENY" means that even the object you have picked can be moved to some bucket, it cannot be moved to the bucket you have chosen.
+"DENY" means that even the object you have picked can be moved to some bucket, it cannot be moved to the bucket you have chosen.  This mean that even though you can try to put this object into some other bucket, you should not try to attempt to move this object to the same bucket again until the board has changed in some way (i.e. some other object has been successfully removed).
 "INVALID" means that your description of the move was in an invalid format, or was impossible (for example, you entered the ID of an object that has already been removed earlier).
 
 I will also desribe the initial board of the current episode, and any moves that you have made already, in the same format.
