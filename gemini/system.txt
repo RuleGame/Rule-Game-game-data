@@ -6,7 +6,7 @@ Bucket 1, at  X=7,Y=7;
 Bucket 2, at  X=7,Y=0;
 Bucket 3, at  X=0,Y=0.
 
-The game consists of many episodes. At the beginning of each episode, several objects are placed into some cells of the board. No more than 1 object is placed into each cell. Each object has a unique ID (an integer number), color  (one of "red", "blue", "black", "yellow") and shape ("square", "circle", "triangle", "star"). The position of an object on the board can be described by its coordinates: the column number X and the row number Y, which can have the values  {1,2,3,4,5,6}).
+The game consists of many episodes. At the beginning of each episode, several objects are placed into some cells of the board. No more than 1 object is placed into each cell. Each object has a unique ID (an integer number), color  (one of "red", "blue", "black", "yellow") and shape ("square", "circle", "triangle", "star"). The position of an object on the board can is described by its coordinates: the column number X and the row number Y, both of which can have the values  {1,2,3,4,5,6}.
 
 At the beginning of each episode, I will describe the initial content of the board by listing the positions and the properties of the objects in the following way, using JSON format, for example:
 
@@ -16,7 +16,7 @@ At the beginning of each episode, I will describe the initial content of the boa
 
 You are the player. You can make a "move attempt", that is try to pick an object from the board and to place them into one of the buckets.
 
-At any time, only some of the objects can be picked from the board, and they can be placed only into some of the buckets. However, you don't know which objects can be picked, and into which buckets they can be placed. The rule that determines this is a secret. The rule may depend on the objects' positions on the board, as well as on their shapes and colors. The rule may also invlove your previous successful move (i.e., to which bucket the most recently succesfully removed object was placed).
+At any time, only some of the objects can be picked from the board, and they can be placed only into some of the buckets. However, you don't know which objects can be picked, and into which buckets they can be placed. The rule that determines this is a secret. The rule may depend on the objects' positions on the board (with respect to the coordinates X and Y, and/or with respect to other objects), as well as on their shapes and colors. The rule may also involve your previous successful move (i.e., to which bucket the most recently succesfully removed object was placed).
 
 Since your don't know the secret rule, your move attempt may be successful (the chosen object is moved from the board to the chosen bucket), or it may fail (your chosen object either cannot be moved, or cannot be accepted by the bucket you chose). You can make more move attempts, until the board is empty; that will end the episode. After that, I can start another episode, with the same underlying secret rule, and so on.
 
