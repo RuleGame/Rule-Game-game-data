@@ -1,0 +1,67 @@
+I challenge you to find a hidden rule.
+The hidden rule controls how you may remove objects from a board, and drop them in buckets.
+The board is 6x6 with coordinates x and y in the set {1,2,3,4,5,6}
+Bucket B0 has (x,y)=(0,7)
+Bucket B1 has (x,y)=(7,7)
+Bucket B2 has (x,y)=(7,0)
+Bucket B3 has (x,y)=(0,0)
+
+A game has several  episodes. At the start of an episode, some objects are placed in some cells of the board. Each object has a unique ID (an integer number), a color  (one of "RED", "BLUE", "BLACK", "YELLOW") and a shape ("SQUARE", "CIRCLE", "TRIANGLE", "STAR"). 
+
+TO start each episode, I list the contents of the board in this JSON format:
+
+{"value":[{"id": 0, "color":"YELLOW","shape":"TRIANGLE","x":5,"y":1},
+{"id": 1, "color":"BLUE","shape":"SQUARE","x":2,"y":2},
+{"id": 2, "color":"YELLOW","shape":"TRIANGLE","x":5,"y":2}]}
+
+In this example, object with id=1 is a BLUE SQUARE at position (x,y)=(2,2).
+
+Your goal is to learn the hidden rule so that you can clear a new board without making any mistakes. 
+To move, you choose an object and bucket, and tell me its id, and the bucket (B0 or B1, etc.)
+
+Generally only some of the objects can move, and each can be placed into only some of the buckets. The hidden rule controls which objects can be picked, and into which buckets they can be placed. The rule may take accoun of shape, color position or any previous successful move (for example, in which bucket the most recently removed object was placed).
+
+You propose moves in the format: 
+"MOVE objectId bucketId"
+
+Here  "id" is the ID of the object you are attempting to move, and "bucketId" is the ID of the bucket into which you want to place it. For example:
+
+"MOVE 5 0"
+
+means "I want to move the object with ID=5 to the Bucket with ID=0".
+
+
+When you propose a move, I will tell you about it using this code:
+
+ACCEPT  means that object is removed, and is no longer on the board
+IMMOVABLE means that object cannot move at this stage in the game 
+DENY means you chose a wrong bcuket
+INVALID means you did not follow the principles of the game, using an invalid format, or made an impossible move (for example, you entered the ID of an object that has already been removed earlier).
+
+When the board is empty the episode ends. I will give you a new board. If we have played any episodes already, I will tell you about all completed episodes, describing the initial board, your moves dand my responses. The format for this history is a set of rows:
+
+Initial board description 
+"MOVE objectId bucketId response"
+"MOVE objectId bucketId response"
+"MOVE objectId bucketId response"
+"MOVE objectId bucketId response"
+.....
+Initial board description 
+"MOVE objectId bucketId response"
+"MOVE objectId bucketId response"
+"MOVE objectId bucketId response"
+"MOVE objectId bucketId response"
+.....
+
+Each row tells the object and bucket you proposed, and my response. 
+
+I will ask for "YOUR MOVE?".  Please describe your proposed move  in the following format:
+"MOVE objectId bucketId"
+
+I will respond using the code ACCEPT, IMMOVABLE, DENY, or INVALID
+
+After that, I will ask "YOUR MOVE?" again, so that you can make your next move attempt.  I may also ask you "EXPLAIN", asking you to describe your guess of what the secret rule may be. 
+
+If you complete an episode with every move scored as ACCEPT, please describe your understanding of the hidden rule. 
+
+After you find a hidden rule, I may ask you to play another game with a new hidden rule.
