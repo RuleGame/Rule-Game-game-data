@@ -1,0 +1,3 @@
+#-- This modifier file converts a 2PG plan to a 2PG-with-bot plan
+bot,pseudo_halftime
+pseudo,10
