@@ -1,0 +1,5 @@
+# this is /FDCL/basic/cw_0123 so the start bucket is fixed. 
+1 (bucket:0) 
+1 (bucket:1) 
+1 (bucket:2) 
+1 (bucket:3)
