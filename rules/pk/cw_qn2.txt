@@ -1,0 +1,6 @@
+# pk/cw_qn combines clockwise (fixed start) with nearest quadrant. 
+(count:1, pos:[19,20,21,25,26,27,31,32,33], bucket:[0])
+(count:1, pos:[22,23,24,28,29,30,34,35,36], bucket:[1])
+(count:1, pos:[4,5,6,10,11,12,16,17,18], bucket:[2])
+(count:1, pos:[1,2,3,7,8,9,13,14,15], bucket:[3])
+
