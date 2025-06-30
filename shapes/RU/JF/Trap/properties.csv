@@ -1,4 +1,4 @@
-images,names,color_indices,corner_indices,rotation_indices
+image,names,color_indices,corner_indices,rotation_indices
 Trapezoids/trap_1_1_1_.png,trap_1_1_1,1,1,1
 Trapezoids/trap_1_1_2_.png,trap_1_1_2,1,1,2
 Trapezoids/trap_1_1_3_.png,trap_1_1_3,1,1,3
