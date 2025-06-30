@@ -1,0 +1,46 @@
+Bob is playing a guessing game with a robot.
+
+There is a square board that consists of 36 cells, in 6 rows and 6 columns. Each cell is identified by its column number X  (0 < X < 7) and its row number Y (0 < Y < 7).  There are four buckets, located near the corners of the board as follows:
+Bucket 0, at  X=0,Y=7;
+Bucket 1, at  X=7,Y=7;
+Bucket 2, at  X=7,Y=0;
+Bucket 3, at  X=0,Y=0.
+
+The game consists of many episodes. At the beginning of each episode, the robot paces several objects on the board, no more than 1 object into each cell. Each object has a unique ID (an integer number), color  (one of "red", "blue", "black", "yellow") and shape ("square", "circle", "triangle", "star"). The position of an object on the board can be described by its coordinates: the column number X and the row number Y, both of which are integer numbers in the range 1 thru 6.
+
+The content of the board can be described in JSON format, by listing the positions and the properties of the objects. For example:
+
+{"value":[{"id": 0, "color":"YELLOW","shape":"TRIANGLE","x":5,"y":1},
+{"id": 1, "color":"BLUE","shape":"SQUARE","x":2,"y":2},
+{"id": 2, "color":"YELLOW","shape":"TRIANGLE","x":5,"y":2}]}
+
+
+Bob, when playing the game, can make a "move attempt", that is ask the robot to pick a specific object from the board and to place that object into a specific bucket. The robot, however, may or may not fulfill Bob's request. Based on some secret rules (known to the robot, but not to Bob), the robot will do one of the 3following things:
+(1) If the secret rules do not allow this object to be moved to any bucket, the robot will reply with the word "IMMOVABLE", and the object will stay on the board.
+(2) If the secret rules allow this object to be moved to some bucket, but not to the one that Bob requested, the robot will reply with the word "DENY", and the object will stay on the board.
+(3) If the secret rules allow this object to be moved to the bucket requested by Bob, the robot will remove the object from the board and will reply with the word "ACCEPT".
+
+The secret rules determining which objects can be removed from the board, and to which bucket or buckets they can be moved, may involve the objects' positions on the board (with respect to the coordinates X and Y, and/or with respect to other objects on the board), as well as on the objects' shapes and colors. The rules may also involve Bob's previous successful move (i.e., to which bucket the most recently succesfully removed object was placed).
+
+The rules do NOT involve objects' IDs, or any previous unsuccessful move attempts. (That is, unsuccessful move attempts (those which did not result in an ACCEPT) do not affect the state of the board).
+
+The rules are deterministic, and they don't change throughout the game; they are the same in all episodes.
+
+Bob's goal in each episode is to "clear the board" (remove all the objects) in as few move attempts as possible. However, Bob seems to make his attempts more or less at random, and keeps making mistakes.
+
+Can you help Bob, by analyzing his move attempts and their outcomes, and figuring what the secret rules are?
+
+I will describe Bob's move attempts in all episodes he has played in the following format
+"MOVE objectId bucketId response",
+where "objectId" is the ID of the object that you attempted to move, "bucketId" is the ID of the bucket into which you wanted to place it, and "response" is one of the following: ACCEPT, IMMOVABLE, DENY.
+
+I will then ask you to provide your best idea of what the secret rules are.
+
+Additionally, I will also describe a new initial board with 9 objects to you, and will ask you to help Bob by proposing a sequence of 9 move attempts that are most likely to successfully clear the board (i.e. such move attempts that all of them be accepted). Please describe your proposed move attempts in the following format:
+"MOVE objectId bucketId"
+where "id" is the ID of the object you are attempting to move, and "bucketId" is the ID of the bucket into which you want to place it. 
+"MOVE 5 0"
+means "I want to move the object with ID=5 to the Bucket with ID=0".
+
+
+
