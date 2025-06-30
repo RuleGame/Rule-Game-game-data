@@ -1,0 +1,1 @@
+(corner_indices:1, bucket:0) (corner_indices:2, bucket:0) (corner_indices:3, bucket:1) (corner_indices:4, bucket:1)
