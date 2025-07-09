@@ -1,4 +1,4 @@
-rule_id,max_boards,min_points,max_points,min_objects,max_objects,min_shapes,max_shapes,min_colors,max_colors,b,feedback_switches,stack_memory_depth,stack_memory_show_order,grid_memory_show_order,give_up_at,x2_likelihood,x4_likelihood,pregame,images,bot_assist,pseudo_halftime
-pk/shapeVcolor,5,5,10,9,9,4,4,4,4,1.5,free,10,FALSE,FALSE,6,1000,1000000,doubling,pk/shapeVcolor/*.png,,10
-FDCL/basic/cw,5,5,10,9,9,4,4,4,4,1.5,free,10,FALSE,FALSE,6,1000,1000000,doubling,,pseudo,10
-FDCL/basic/ccw,5,5,10,9,9,4,4,4,4,1.5,free,10,FALSE,FALSE,6,1000,1000000,doubling,,,10
+rule_id,max_boards,min_points,max_points,min_objects,max_objects,min_shapes,max_shapes,min_colors,max_colors,b,feedback_switches,stack_memory_show_order,grid_memory_show_order,give_up_at,x2_likelihood,x4_likelihood,pregame,images,bot_assist,pseudo_halftime
+pk/shapeVcolor,5,5,10,9,9,4,4,4,4,1.5,free,FALSE,FALSE,6,1000,1000000,doubling,pk/shapeVcolor/*.png,,10
+FDCL/basic/cw,5,5,10,9,9,4,4,4,4,1.5,free,FALSE,FALSE,6,1000,1000000,doubling,,pseudo,10
+FDCL/basic/ccw,5,5,10,9,9,4,4,4,4,1.5,free,FALSE,FALSE,6,1000,1000000,doubling,,,10
