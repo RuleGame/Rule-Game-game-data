@@ -1,0 +1,5 @@
+#-- can pick pieces from one quadrant at a time, and put to the appropriate bucket
+1 (pos:[1,2,3,7,8,9,13,14,15], bucket:3)
+1 (pos:[19,20,21,25,26,27,31,32,33], bucket:0)
+1 (pos:[23,24,28,29,30,34,35,36], bucket:1)
+1 (pos:[4,5,6,10,11,12,16,17,18,22], bucket:2)
