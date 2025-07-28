@@ -1,0 +1,3 @@
+#-- Red and yellow pieces go to the same bucket as the previous piece; black and blue, go to the next bucket (clockwise)
+1 ()
+(color:[red,yellow], pos:p) (color:[black,blue], pos:p+1)
