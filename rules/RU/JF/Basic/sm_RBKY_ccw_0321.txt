@@ -1,0 +1,5 @@
+# this is sm_cqts_ccw_0321
+1 (shape:circle, bucket:0) 
+1 (shape:square, bucket:3) 
+1 (shape:triangle, bucket:2) 
+1 (shape:star, bucket:1)
