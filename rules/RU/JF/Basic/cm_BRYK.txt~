@@ -1,0 +1,4 @@
+# COLOR MATCH
+# Can be played as a dynamic plan, e.g.
+# R:FDCL/basic/basic-01-B:APP/APP-no-feedback
+(color:blue, bucket:0) (color:black, bucket:1) (color:yellow, bucket:2) (color:red, bucket:3)
