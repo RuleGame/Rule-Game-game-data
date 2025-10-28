@@ -1,0 +1,4 @@
+rule_id,max_boards,min_points,max_points,min_objects,max_objects,min_shapes,max_shapes,min_colors,max_colors,b,feedback_switches,stack_memory_depth,stack_memory_show_order,grid_memory_show_order,give_up_at,x2_likelihood,x4_likelihood,pregame,images,bot_assist,bot_assist_players,pseudo_halftime,pseudo_init_error_rate
+FDCL/basic/quadNearby,2,2,10,4,6,2,4,2,4,1.5,free,10,TRUE,TRUE,0,100,10000,doubling,,pseudo,1,10,0.9
+FDCL/basic/cw,2,2,10,4,6,2,4,2,4,1.5,free,10,TRUE,TRUE,0,100,10000,doubling,,pseudo,2,10,0.9
+FDCL/basic/ccw,2,2,10,4,6,2,4,2,4,1.5,free,10,TRUE,TRUE,0,100,10000,doubling,,pseudo,,10,0.9
