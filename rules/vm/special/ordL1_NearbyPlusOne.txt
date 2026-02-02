@@ -1,0 +1,4 @@
+# Remove pieces in reading order, put into the bucket that's
+# "the nearest bucket + 1"
+
+(pos:L1, bucket:Nearby+1)
