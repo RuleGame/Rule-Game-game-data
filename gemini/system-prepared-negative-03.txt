@@ -1,0 +1,47 @@
+Bob is playing a board game with an electronic device called an "oracle". 
+
+There is a square board that consists of 36 cells, in 6 rows and 6 columns. Each cell is identified by its column number X  (0 < X < 7) and its row number Y (0 < Y < 7).  There are four buckets, located near the corners of the board as follows:
+Bucket 0, at  X=0,Y=7;
+Bucket 1, at  X=7,Y=7;
+Bucket 2, at  X=7,Y=0;
+Bucket 3, at  X=0,Y=0.
+
+The game consists of many episodes. At the beginning of each episode, the oracle randomly places several objects on the board, no more than 1 object into each cell. Each object has a unique ID (an integer number), color  (one of "red", "blue", "black", "yellow") and shape ("square", "circle", "triangle", "star"). The position of an object on the board can be described by its coordinates: the column number X and the row number Y, both of which are integer numbers in the range 1 thru 6.
+
+The content of the board can be described in JSON format, by listing the positions and the properties of the objects. For example:
+
+{"value":[{"id": 0, "color":"YELLOW","shape":"TRIANGLE","x":5,"y":1},
+{"id": 1, "color":"BLUE","shape":"SQUARE","x":2,"y":2},
+{"id": 2, "color":"YELLOW","shape":"TRIANGLE","x":5,"y":2}]}
+
+Some "hidden rules" (not known to Bob) are programmed into the oracle's circuitry, and determine which objects can be removed from the board, and into which buckets they can be placed. Bob, when playing the game, can make a "move attempt", that is try to pick a specific object from the board and to place that object into a specific bucket, by saying "MOVE id bucketId", e.g.
+  MOVE 3 0
+(meaning, "I want to move object 3 to bucket 0). The oracle will then respond in one of the 3 following ways:
+ * If Bob's attempted move is one of those that the hidden rules allow at this point in the game, the oracle will respond with the word "ACCEPT", and removes the object from the board.
+ * If the hidden rules don't allow moving the object to the bucket chosen by Bob, but allow moving that object to some other bucket or buckets, then the oracle will respond with the word "DENY", and the object will stay on the board. Bob will then know that it makes no sense to try moving this object to the same bucket again until the state of the board has changed.
+ * If the hidden rules don't allow moving the object to any bucket, the oracle will respon with the word "IMMOVABLE", and the object will stay on the board. Bob will then know that it makes no sense to try moving this object again, to any bucket, until the state of the board has changed.
+
+The episode ends when all objects have been removed from the board, i.e. "the board has been cleared". 
+
+Bob and you don't know the hidden rules. However, we know that they may involve the objects' positions on the board (with respect to the coordinates X and Y, and/or with respect to other objects on the board), as well as the objects' shapes and colors.
+
+The rules may also involve Bob's previous successful move (i.e., to which bucket the most recently succesfully removed object was placed).
+
+The rules do NOT involve objects' IDs, or any previous unsuccessful move attempts. (That is, unsuccessful move attempts (those which did not result in an ACCEPT) do not affect the state of the board).
+
+The rules are deterministic, and they don't change throughout the game; they are the same in all episodes.
+
+Bob's goal in each episode is to "clear the board" (remove all the objects) in as few move attempts as possible.
+
+So far, Bob has tried played a few episodes, but he did not too well; since he does not know the hidden rules, he made a lot of unsuccessful move attempts. For each episode, he has kept track of the unsuccessful move attempts that he had made before the his first successful move. However, he did not write down that successful move, or the rest of the episode.
+
+Can you help Bob to guess the hidden rules of the game, by analyzing Bob's recorded unsuccessful move attempts in the beginning of each episode he has played? I will describe these recorded move attempts in the following format
+"MOVE id bucketId response",
+where "id" is the ID of the object that you attempted to move, "bucketId" is the ID of the bucket into which you wanted to place it, and "response" is one of the following: ACCEPT, IMMOVABLE, DENY.
+
+I will then ask you to provide your best idea of what the hidden rules are. Try to find a rule set that will explain the oracle response to all of Bob's recorded move attempts, while keeping in mind that the rules probably are not overly complicated. Most likely they can be described by just a few lines of text or computer code, as in the above examples.
+
+Finally, I will also describe to you several "future episodes", each one coming with an initial board with N objects, but no recorded moves. I will ask you to help Bob by proposing, for each board, a sequence of N move attempts that are most likely to successfully clear the board (i.e. such a sequence of move attempts that all of them be accepted). 
+
+
+
