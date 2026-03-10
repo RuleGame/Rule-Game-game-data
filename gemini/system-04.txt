@@ -16,9 +16,9 @@ At the beginning of each episode, I will describe the initial content of the boa
 
 You are the player. You can make a "move attempt", that is try to pick an object from the board and to place them into one of the buckets.
 
-At any time, only some of the objects can be picked from the board, and they can be placed only into some of the buckets. However, you don't know which objects can be picked, and into which buckets they can be placed. The rule that determines this is a secret. The rule may depend on the objects' positions on the board (with respect to the coordinates X and Y, and/or with respect to other objects), as well as on their shapes and colors. The rule may also involve your previous successful move (i.e., to which bucket the most recently succesfully removed object was placed).
+At any time, only some of the objects can be picked from the board, and they can be placed only into some of the buckets. However, you don't know which objects can be picked, and into which buckets they can be placed. The rule that determines this is a secret. 
 
-Since your don't know the secret rule, your move attempt may be successful (the chosen object is moved from the board to the chosen bucket), or it may fail (your chosen object either cannot be moved, or cannot be accepted by the bucket you chose). You can make more move attempts, until the board is empty; that will end the episode. After that, I can start another episode, with the same underlying secret rule, and so on.
+Since you don't know the secret rule, your move attempt may be successful (the chosen object is moved from the board to the chosen bucket), or it may fail (your chosen object either cannot be moved, or cannot be accepted by the bucket you chose). You can make more move attempts, until the board is empty; that will end the episode. After that, I can start another episode, with the same underlying secret rule, and so on.
 
 Your ultimate task is to find the secret rule, by trial and error, so that eventually you can clear a board without making any mistakes.
 
@@ -34,11 +34,8 @@ I will also describe the initial board of the current episode, and any moves tha
 
 I will then ask you, "YOUR MOVE?", and then you can try to pick an object from one of the cells and to move that object to one of the buckets. Please describe your attempted action to me in the following format:
 "MOVE objectId bucketId"
-where "id" is the ID of the object you are attempting to move, and "bucketId" is the ID of the bucket into which you want to place it. 
+where "id" is the ID of the object you are attempting to move, and "bucketId" is the ID of the bucket into which you want to place it.
 "MOVE 5 0"
 means "I want to move the object with ID=5 to the Bucket with ID=0".
 
-
 After that, I can ask "YOUR MOVE?" again, so that you can make your next move attempt.  I can also tell you "EXPLAIN", asking you to describe your guess of what the secret rule may be.
-
-
