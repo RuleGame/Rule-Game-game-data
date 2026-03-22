@@ -10,6 +10,7 @@ The game consists of many episodes. At the beginning of each episode, several ob
 
 At the beginning of each episode, I will describe the initial content of the board by listing the positions and the properties of the objects in the following way, using JSON format, for example:
 
+NEW EPISODE 
 {"value":[{"id": 0, "color":"YELLOW","shape":"TRIANGLE","x":5,"y":1},
 {"id": 1, "color":"BLUE","shape":"SQUARE","x":2,"y":2},
 {"id": 2, "color":"YELLOW","shape":"TRIANGLE","x":5,"y":2}]}
@@ -18,27 +19,30 @@ You are the player. You can make a "move attempt", that is try to pick an object
 
 At any time, only some of the objects can be picked from the board, and they can be placed only into some of the buckets. However, you don't know which objects can be picked, and into which buckets they can be placed. The rule that determines this is a secret. The rule may depend on the objects' positions on the board (with respect to the coordinates X and Y, and/or with respect to other objects), as well as on their shapes and colors. The rule may also involve your previous successful move (i.e., to which bucket the most recently succesfully removed object was placed).
 
-Since you don't know the secret rule, your move attempt may be successful (the chosen object is moved from the board to the chosen bucket), or it may fail (your chosen object either cannot be moved, or cannot be accepted by the bucket you chose). You can make more move attempts, until the board is empty; that will end the episode. After that, I can start another episode, with the same underlying secret rule, and so on.
+Since your don't know the secret rule, your move attempt may be successful (the chosen object is moved from the board to the chosen bucket), or it may fail (your chosen object either cannot be moved, or cannot be accepted by the bucket you chose). You can make more move attempts, until the board is empty; that will end the episode. After that, I can start another episode, with the same underlying secret rule, and so on.
 
 Your ultimate task is to find the secret rule, by trial and error, so that eventually you can clear a board without making any mistakes.
 
-If we have played any episodes already, I will tell you about each completed episode, describing its initial board and your moves during the episode, in the following format:
-"MOVE objectId bucketId response",
-where "objectId" is the ID of the object that you attempted to move, "bucketId" is the ID of the bucket into which you wanted to place it, and "response" is whatever response I have given to that move. The response is one word, which can be one of the following: ACCEPT, IMMOVABLE, DENY, INVALID.
+After starting a new episode (presenting a new board to you), I will ask you,
+"YOUR MOVE?"
+,  and then you can try to pick an object from one of the cells and to move that object to one of the buckets. Please describe your attempted action to me in the following format:
+"MOVE objectId bucketId"
+where "id" is the ID of the object you are attempting to move, and "bucketId" is the ID of the bucket into which you want to place it. For example, 
+"MOVE 5 0"
+means that you want to move the object with ID=5 to the Bucket with ID=0".
+
+After that, I will tell you about the outcome of your atttempted move, using one of the four words: ACCEPT, IMMOVABLE, DENY, INVALID.
 "ACCEPT" means that you have successfully removed the object from the board, by placing it to your chosen bucket, so that this cell is now empty.
 "IMMOVABLE" means that the object you have tried to move cannot at present be moved to any bucket, and the object stays on the board. This mean that you should not try to attempt to move this object again until the board has changed in some way (i.e. some other object has been successfully removed).
-"DENY" means that even the object you have picked can be moved to some bucket, it cannot be moved to the bucket you have chosen.  This mean that even though you can try to put this object into some other bucket, you should not try to attempt to move this object to the same bucket again until the board has changed in some way (i.e. some other object has been successfully removed).
+"DENY" means that even though the object you have picked can be moved to some bucket, it cannot be moved to the bucket you have chosen.  This mean that even though you can try to put this object into some other bucket, you should not try to attempt to move this object to the same bucket again until the board has changed in some way (i.e. some other object has been successfully removed).
 "INVALID" means that your description of the move was in an invalid format, or was impossible (for example, you entered the ID of an object that has already been removed earlier).
 
-I will also describe the initial board of the current episode, and any moves that you have made already, in the same format.
+If there are still any objects left on the board, I will again ask you "YOUR MOVE?", so that you can make another move.
 
-I will then ask you, "YOUR MOVE?", and then you can try to pick an object from one of the cells and to move that object to one of the buckets. Please describe your attempted action to me in the following format:
-"MOVE objectId bucketId"
-where "id" is the ID of the object you are attempting to move, and "bucketId" is the ID of the bucket into which you want to place it. 
-"MOVE 5 0"
-means "I want to move the object with ID=5 to the Bucket with ID=0".
+If you have successfully cleared the board, I will say
+"BOARD CLEARED!"
 
+I may then start a new episode, with another "NEW EPISODE" message.
 
-After that, I can ask "YOUR MOVE?" again, so that you can make your next move attempt.  I can also tell you "EXPLAIN", asking you to describe your guess of what the secret rule may be.
-
+I may also send an "EXPLAIN" command, asking you to describe your guess of what the secret rule may be. Along with it, I may also show you several boards at once (the "future board"), asking you to provide, for each future board, a sequence of moves that would clear that board without making any wrong moves (move attempts that would result in an "IMMOVABLE" or "DENY" response).
 
