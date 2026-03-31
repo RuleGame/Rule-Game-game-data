@@ -23,13 +23,7 @@ Some "hidden rules" (not known to Bob) are programmed into the oracle's circuitr
 
 The episode ends when all objects have been removed from the board, i.e. "the board has been cleared". 
 
-Bob and you don't know the hidden rules. However, we know that they may involve the objects' positions on the board (with respect to the coordinates X and Y, and/or with respect to other objects on the board), as well as the objects' shapes and colors.
-
-The rules may also involve Bob's previous successful move (i.e., to which bucket the most recently succesfully removed object was placed).
-
-The rules do NOT involve objects' IDs, or any previous unsuccessful move attempts. (That is, unsuccessful move attempts (those which did not result in an ACCEPT) do not affect the state of the board).
-
-The rules are deterministic, and they don't change throughout the game; they are the same in all episodes.
+Bob and you don't know the hidden rules.
 
 Bob's goal in each episode is to "clear the board" (remove all the objects) in as few move attempts as possible. However, Bob seems to make his attempts more or less at random, and keeps making mistakes.
 
