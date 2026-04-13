@@ -9,20 +9,21 @@ The following grammar defines the valid structure for the RDL description of a s
 <newline>   ::= "\n" 
 
 <rule_set> ::= (<preorder_definition> <newline>)* <rule_line> (<newline> <rule_line>)*
-<preorder_definition> ::= "Order " <preorder_name> "=[" <area> | ("," <area>)+ "]"
-<area> ::= <position> | "[" <position> ("," <position>)+ "]"
+<preorder_definition> ::= "Order " <preorder_name> "=[" <area>  ("," <area>)* "]"
+<area> ::= <position> | "[" <position> ("," <position>)* "]"
 <position> ::= <number>
 <preorder_name> ::= <identifier>
 <rule_line> ::= <global_count>? <atom>+
 <global_count> ::= <number>
 <atom> ::= <empty_atom> | "(" <restriction>  ("," <restriction>)* ")"
 <empty_atom> ::= "()"
-<restriction> ::= <color_restriction> | <shape_restriction> | <position_restriction> | <bucket_restriction> | <count_restriction>
+<restriction> ::= <color_restriction> | <shape_restriction> | <position_restriction> | <bucket_restriction> | <count_restriction>  | <posterior_position_restriction> 
 <color_restriction> ::= "color:["  <color_name>    ("," <color_name>)* ")"       "]"
 <color_name> ::= "red" | "black"| "blue" | "yellow"
 <shape_restriction> ::= "shape:["  <shape_name>    ("," <shape_name>)* ")"       "]"
 <shape_name> ::= "circle" | "square"| "star" | "triangle"
-<position_restriction> ::= "position:" <preorder_name>
+<position_restriction> ::= "pos:" <preorder_name>
+<posterior_position_restriction> ::= "postpos:" <preorder_name>
 <bucket_restriction> ::= "bucket:[" <bucket_expression> ("," <bucket_expression>)* ")"       "]"
 <bucket_expression> ::= [0-3] | <expression>
 <count_restriction> ::= "count:" <number>
@@ -40,11 +41,13 @@ The following grammar defines the valid structure for the RDL description of a s
 
 ## 2. Semantic Rules & Constraints.
 * **Operator Precedence**: When the oracle evaluates an `<expression>`, it follows standard mathematical precedence. Multiplication (`*`), division (`/`), and modulo (`%`) have higher precedence than addition (`+`) and subtraction (`-`).
-* **Positions on the board**: in the RLD, a cell with the coordinates (X,Y) is described by a single position number, `<position>`=(Y-1)*6+X. Therefore, a legal `<position>` may have a numerical value in the range 1 through 36.
-* **Preorders**: a `<preorder_definition>` introduces a total preorder on the set of 36 cells. A total preorder is a transitive and reflexive relation defined on the entire set of cells. It divides the set of cells into several areas, so that all positions in the first area precede all cells in the second group, and so on. For example, the preorder defined by the following `<preorder_definition>` orders the board cells in the order of increasing Y:
+* **Cell positions**: in the RLD, a cell with the coordinates (X,Y) is described by a single position number, `<position>`=(Y-1)*6+X. Therefore, a legal `<position>` may have a numerical value in the range 1 through 36.
+* **Preorders**: a `<preorder_definition>` introduces a total preorder on the set of 36 cells. A total preorder is a transitive and reflexive relation defined on the entire set of cells. It divides the entire board into several areas, with 1 or more cells in each area, so that all cells in the first area precede all cells in the second group, and so on. For example, the preorder defined by the following `<preorder_definition>` orders the board cells in the order of increasing Y:
 ```
 Order O1=[[1,2,3,4,5,6], [7,8,9,10,11,12], [13,14,15,16,17,18], [19,20,21,22,23,24], [25,26,27,28,29,30], [31,32,33,34,35,36]]
 ```
+Make sure that the preorder includes all 36 cells, that is every number between 1 and 36 appears in the preorder exactly once.
+
 * ** A `<position_restriction>` may only refer to a `<preorder_name>` that has been defined elsewhere in the rule set. For example, `position:O1`.
 
 ## 3. Execution by the oracle.
@@ -65,7 +68,9 @@ At any given time, only one `<rule_line>` is active. At the beginning of the gam
 
 *** As already mentioned above, a  `<count_restriction>` accepts a move attempt if and only if the current value of the counter associated with the atom is positive.
 
-*** A `<position_restriction>` will accept a move attempt if and only if the position of the cell from which the player wants to take an object precedes all other currently non-empty cells of the board in the `<preorder_name>` referred to by the `<position_restriction>`. 
+*** A `<position_restriction>` with a given  `<preorder_name>` will accept a move attempt if and only if the cell position of the object the player wants to take precedes all other currently non-empty cells of the board according to that `<preorder_name>`. 
+
+*** A `<posterior_position_restriction>` with a given  `<preorder_name>` is similar to  `<position_restriction>` with the same `<preorder_name>`, but the preorder is applied not to all non-empty cells, but only to the cells currently occupied by objects that are accepted by all other `<restriction>`s in that `<atom>`. That is, the  `<posterior_position_restriction>` will accept a move attempt if and only if the cell position of the object the player wants to take precedes, according to that `<preorder_name>`, all other cells that currently contain other objects that are accepted by all other `<restriction>`s in that `<atom>`. For example, if preorder `OX` orders cells according to increasing X coordinates, the `<atom>` `(color:[red],postpos:OX)` will only accept a red object whose X coordinate is no greater than that of any other red objects currently on the board.
 
 *** A <bucket_restriction> will  accept a move attempt if and only if at least one of the  `<bucket_expression>`s in the <bucket_restriction> evaluates to the value that matches the bucketId of the bucket to which the player wants to move the object. If a `<bucket_expression>` is an arithmetic `<expression>`, the only `<identifier>` it may contain is `p`; the value of the variable identified by that `<identifier>` is the bucketId of the bucket into which an object has been placed by the most recent successful move. (If no object has been removed from the board yet,  the `<bucket_expression>` evaluates to an "undefined value", which does not match any bucketId).
 
