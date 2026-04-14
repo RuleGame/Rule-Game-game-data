@@ -55,7 +55,7 @@ Make sure that the preorder includes all 36 cells, that is every number between 
 This section explains how a rule set description written in the syntax presented above describes how the oracle decides which moves are allowed at a given point in the game. 
 
 **Cyclic transfer of control between `<rule_line>`s.**
-At any given time, only one `<rule_line>` is active. At the beginning of the game, the first `<rule_line>` becomes active. This `<rule_line>` remains active as long as it allows at least one move; if this `<rule_line>` does not allow any moves, the next `<rule_line>` becomes active, and so one. When the last '<rule_line>` ceases to be active, the first `<rule_line>` becomes active again, and so on, cyclically.
+At any given time, only one `<rule_line>` is active. At the beginning of the game, the first `<rule_line>` becomes active. This `<rule_line>` remains active as long as it allows at least one move; if this `<rule_line>` does not allow any moves, the next `<rule_line>` becomes active, and so one. When the last `<rule_line>` ceases to be active, the first `<rule_line>` becomes active again, and so on, cyclically.
 
 **Acceptance of a move attempt by a  `<rule_line>`**. When the player makes a move attempt (trying to move an object from the board to one of the buckets), the oracle analyzes the attempted move based on the current state of the currently active `<rule_line>`, by testing it against each `<atom>` of the line. If at least one `<atom>` accepts the move attempt, then the move is accepted (the message
 "ACCEPT" is returned to the player), and the  object is removed from the board. This is a successful move. If no  `<atom>` accepts the move attempt, but at least one atom would accept the move attempt if the destination bucket were different, the the move is rejected with the "DENY" message to the player. Otherwise (i.e. if none of the  `<atom>`s accepts the move attempt, and none of the   `<atom>`s would accept any move attempt with this object), then the move is rejected with the "IMMOVABLE" message to the player.
@@ -72,7 +72,7 @@ At any given time, only one `<rule_line>` is active. At the beginning of the gam
 
 *** A `<posterior_position_restriction>` with a given  `<preorder_name>` is similar to  `<position_restriction>` with the same `<preorder_name>`, but the preorder is applied not to all non-empty cells, but only to the cells currently occupied by objects that are accepted by all other `<restriction>`s in that `<atom>`. That is, the  `<posterior_position_restriction>` will accept a move attempt if and only if the cell position of the object the player wants to take precedes, according to that `<preorder_name>`, all other cells that currently contain other objects that are accepted by all other `<restriction>`s in that `<atom>`. For example, if preorder `OX` orders cells according to increasing X coordinates, the `<atom>` `(color:[red],postpos:OX)` will only accept a red object whose X coordinate is no greater than that of any other red objects currently on the board.
 
-*** A <bucket_restriction> will  accept a move attempt if and only if at least one of the  `<bucket_expression>`s in the <bucket_restriction> evaluates to the value that matches the bucketId of the bucket to which the player wants to move the object. If a `<bucket_expression>` is an arithmetic `<expression>`, the only `<identifier>` it may contain is `p`; the value of the variable identified by that `<identifier>` is the bucketId of the bucket into which an object has been placed by the most recent successful move. (If no object has been removed from the board yet,  the `<bucket_expression>` evaluates to an "undefined value", which does not match any bucketId).
+*** A `<bucket_restriction>` will  accept a move attempt if and only if at least one of the  `<bucket_expression>`s in the `<bucket_restriction>` evaluates to the value that matches the bucketId of the bucket to which the player wants to move the object. If a `<bucket_expression>` is an arithmetic `<expression>`, the only `<identifie r>` it may contain is `p`; the value of the variable identified by that `<identifier>` is the bucketId of the bucket into which an object has been placed by the most recent successful move. (If no object has been removed from the board yet,  the `<bucket_expression>` evaluates to an "undefined value", which does not match any bucketId).
 
 ---
 
@@ -92,9 +92,9 @@ The player may pick an object of any color; he must place it into the bucket who
 1 (color:[black],bucket:[1])
 1 (color:[yellow],bucket:[2])
 1 (color:[blue],bucket:[3])
-``
+```
 
-The player must start with picking a red object (if there is one on the board), and placing it to bucket 0.` After that, if there are black objects on the board, one black object must be picked and placed to bucket 1. After that, if there is a yellow object, it must be picked and placed to bucket 2. And so on, cyclically.
+The player must start with picking a red object (if there is one on the board), and placing it to bucket 0. After that, if there are black objects on the board, one black object must be picked and placed to bucket 1. After that, if there is a yellow object, it must be picked and placed to bucket 2. And so on, cyclically.
 
 ## Example 3:
 ```
