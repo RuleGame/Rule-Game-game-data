@@ -15,14 +15,14 @@ The following grammar defines the valid structure for the RDL description of a s
 <preorder_name> ::= <identifier>
 <rule_line> ::= <global_count>? <atom>+
 <global_count> ::= <number>
-<atom> ::= <empty_atom> | "(" <restriction>  ("," <restriction>)* ")"
-<empty_atom> ::= "()"
-<restriction> ::= <color_restriction> | <shape_restriction> | <position_restriction> | <bucket_restriction> | <count_restriction>  | <posterior_position_restriction> 
+<atom> ::=  "("(<count_restriction>",")? (<color_restriction>",")? (<shape_restriction>",")? (<position_restriction>",")? (<posterior_position_restriction>",")? (<bucket_restriction>",")? ")"
+<restriction> ::= <count_restriction>| <color_restriction> | <shape_restriction> | <position_restriction> |  <posterior_position_restriction> | <bucket_restriction>
 <color_restriction> ::= "color:["  <color_name>    ("," <color_name>)* ")"       "]"
 <color_name> ::= "red" | "black"| "blue" | "yellow"
 <shape_restriction> ::= "shape:["  <shape_name>    ("," <shape_name>)* ")"       "]"
 <shape_name> ::= "circle" | "square"| "star" | "triangle"
-<position_restriction> ::= "pos:" <preorder_name>
+<position_restriction> ::= "pos:" <preorder_name> | "pos:" <list_of_numbers>
+<list_of_numbers> ::= "[" <number> ("," <number>)* "]"
 <posterior_position_restriction> ::= "postpos:" <preorder_name>
 <bucket_restriction> ::= "bucket:[" <bucket_expression> ("," <bucket_expression>)* ")"       "]"
 <bucket_expression> ::= [0-3] | <expression>
@@ -68,9 +68,15 @@ At any given time, only one `<rule_line>` is active. At the beginning of the gam
 
 *** As already mentioned above, a  `<count_restriction>` accepts a move attempt if and only if the current value of the counter associated with the atom is positive.
 
-*** A `<position_restriction>` with a given  `<preorder_name>` will accept a move attempt if and only if the cell position of the object the player wants to take precedes all other currently non-empty cells of the board according to that `<preorder_name>`. 
+*** A `<color_restriction>` accepts a move attempt if and only if the color of the object being moved matches a `<color_name>` that appears in the  `<color_restriction>`.
 
-*** A `<posterior_position_restriction>` with a given  `<preorder_name>` is similar to  `<position_restriction>` with the same `<preorder_name>`, but the preorder is applied not to all non-empty cells, but only to the cells currently occupied by objects that are accepted by all other `<restriction>`s in that `<atom>`. That is, the  `<posterior_position_restriction>` will accept a move attempt if and only if the cell position of the object the player wants to take precedes, according to that `<preorder_name>`, all other cells that currently contain other objects that are accepted by all other `<restriction>`s in that `<atom>`. For example, if preorder `OX` orders cells according to increasing X coordinates, the `<atom>` `(color:[red],postpos:OX)` will only accept a red object whose X coordinate is no greater than that of any other red objects currently on the board.
+*** A `<shape_restriction>` accepts a move attempt if and only if the shape of the object being moved matches a `<shape_name>` that appears in the  `<shape_restriction>`.
+
+*** A `<position_restriction>` with a given  `<preorder_name>` will accept a move attempt if and only if the cell position of the object the player wants to take precedes all other currently non-empty cells of the board according to that `<preorder_name>`.
+
+*** A `<position_restriction>` with a  `<list_of_numbers>` will accept a move attempt if and only if the cell position of the object the player wants to move appears within the  `<list_of_numbers>`.
+
+*** A `<posterior_position_restriction>` with a given  `<preorder_name>` is similar to  `<position_restriction>` with the same `<preorder_name>`, but the preorder is applied not to all non-empty cells, but only to the cells currently occupied by objects that are accepted by all preceding `<restriction>`s ( `<color_restriction>` and/or  `<shape_restriction>`) in that `<atom>`. That is, the  `<posterior_position_restriction>` will accept a move attempt if and only if the cell position of the object to be moved precedes, according to that `<preorder_name>`, all other cells that currently contain other objects that are accepted by all other `<restriction>`s in that `<atom>`. For example, if preorder `OX` orders cells according to increasing X coordinates, the `<atom>` `(color:[red],postpos:OX)` will only accept a red object whose X coordinate is no greater than that of any other red objects currently on the board.
 
 *** A `<bucket_restriction>` will  accept a move attempt if and only if at least one of the  `<bucket_expression>`s in the `<bucket_restriction>` evaluates to the value that matches the bucketId of the bucket to which the player wants to move the object. If a `<bucket_expression>` is an arithmetic `<expression>`, the only `<identifie r>` it may contain is `p`; the value of the variable identified by that `<identifier>` is the bucketId of the bucket into which an object has been placed by the most recent successful move. (If no object has been removed from the board yet,  the `<bucket_expression>` evaluates to an "undefined value", which does not match any bucketId).
 
