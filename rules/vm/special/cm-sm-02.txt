@@ -1,0 +1,2 @@
+1 (color:[red,black],bucket:0)  (shape:[star,circle],bucket:1)
+1 (color:[blue,yellow],bucket:2)  (shape:[square,triangle],bucket:3)
