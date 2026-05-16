@@ -1,0 +1,5 @@
+# COLOR MATCH: two alternating maps
+# Can be played as a dynamic plan, e.g.
+# R:FDCL/basic/basic-01-B:APP/APP-no-feedback
+1 (color:black, bucket:0) (color:red, bucket:1) (color:yellow, bucket:2) (color:blue, bucket:3)
+1 (color:red, bucket:0) (color:blue, bucket:1) (color:black, bucket:2) (color:yellow, bucket:3)
