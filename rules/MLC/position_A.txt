@@ -1,4 +1,3 @@
 # intended to be a very easy position rule
-#  Order L1 = THIS COMES FROM rule/MLC. There must be a pointer to the 
-directory if it shows on MLC "play for fun" 
+#  6/12/2026 6:21:24 PM From rules/MLCOrder L1 = THIS COMES FROM rule/MLC. There must be a pointer to the directory if it shows on MLC "play for fun" 
 (*,*,*,L1, Nearby)
