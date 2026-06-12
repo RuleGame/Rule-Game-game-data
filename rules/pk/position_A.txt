@@ -1,3 +1,3 @@
 # intended to be a very easy position rule
-# Order L1 = reading order. 
+# Is hidden here so that the selector cannot know what it is.
 (*,*,*,L1, Nearby)
